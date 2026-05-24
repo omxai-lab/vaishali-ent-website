@@ -1,0 +1,7 @@
+# Scraper scripts and temporary scrapings
+scraped_pages/
+scrape_site.py
+find_images.py
+download_images.py
+.system_generated/
+*.log
