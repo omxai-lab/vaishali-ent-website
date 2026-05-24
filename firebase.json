@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "scraped_pages/**",
+      "scrape_site.py",
+      "find_images.py",
+      "download_images.py"
+    ]
+  }
+}
