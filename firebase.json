@@ -1,14 +1,32 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
-      "scraped_pages/**",
-      "scrape_site.py",
-      "find_images.py",
-      "download_images.py"
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        ]
+      },
+      {
+        "source": "**/*.php",
+        "headers": [
+          { "key": "Content-Type", "value": "text/html; charset=utf-8" }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot|mp4)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400" }
+        ]
+      }
     ]
   }
 }

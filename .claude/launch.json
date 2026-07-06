@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mirror-staging",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["C:\\Users\\suhas\\AppData\\Local\\Temp\\claude\\C--dev-omxai-Vaishali-ENT-website\\5140f59c-e619-44a9-8fb3-ebda05918d23\\scratchpad\\serve_public.py"],
+      "port": 8765
+    }
+  ]
+}
