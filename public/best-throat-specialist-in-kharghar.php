@@ -427,6 +427,8 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
+                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -909,6 +911,8 @@ Tonsillectomy is the removal of the tonsils. Tonsillectomy is not routine surger
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
+                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 
