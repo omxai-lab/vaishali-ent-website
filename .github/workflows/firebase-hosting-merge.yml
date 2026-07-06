@@ -17,6 +17,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VAISHALI_ENT_WEBSITE }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VAISHALI_ENT_STAGING }}'
           channelId: live
-          projectId: vaishali-ent-website
+          projectId: vaishali-ent-staging
