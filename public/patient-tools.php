@@ -418,8 +418,15 @@
                                                             </ul>
                                                         </li>
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
                                                             <ul>
                                                                 <li><a href="gallery.php">Photo</a></li>
@@ -629,8 +636,11 @@
                                 <li><a href="ear-treatments.php">Treatments</a></li>
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
                                 <li><a href="gallery.php">Gallery</a></li>
                                 <li><a href="testimonials.php">Testimonials</a></li>
                                 <li><a href="contact.php">Contact Us</a></li>

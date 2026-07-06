@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do I hear ringing in my ears when there is no sound around me?", "acceptedAnswer": {"@type": "Answer", "text": "Ringing, buzzing or hissing without an external source is called tinnitus. It usually arises from changes in the inner ear or the hearing nerve pathway, commonly after noise exposure, ear wax blockage, infection or age-related hearing changes. Because the causes vary widely, an ENT examination is the right first step to find what is driving it."}}, {"@type": "Question", "name": "Will my tinnitus go away on its own?", "acceptedAnswer": {"@type": "Answer", "text": "Temporary tinnitus after a loud concert or a cold often settles within hours to days. Tinnitus that persists for more than a couple of weeks, occurs in one ear only, or is pulsatile (beating with your pulse) should be evaluated by an ENT specialist, as it may indicate an underlying treatable condition."}}, {"@type": "Question", "name": "Is tinnitus a sign of hearing loss?", "acceptedAnswer": {"@type": "Answer", "text": "Very often, yes. Many people with tinnitus have some degree of hearing loss they may not have noticed. A pure tone audiometry test (Rs.500 at the clinic) along with impedance testing helps measure your hearing and often explains the tinnitus, which guides treatment options."}}, {"@type": "Question", "name": "Can medicines cause ringing in the ears?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Very high doses of aspirin, certain antibiotics ending in \"-mycin\", some diuretics, anti-malarial drugs and a few cancer medicines can cause tinnitus, an effect called ototoxicity. Never stop a prescribed medicine on your own; discuss the symptom with your doctor so the medication can be reviewed safely."}}, {"@type": "Question", "name": "What tests are done to find the cause of tinnitus?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluation usually starts with an ear examination and audiometry, and may include impedance audiometry, OAE or BERA tests depending on the findings. These tests are available at Dr. Vaishali Sangole's clinic in Kharghar and help separate ear-related causes from nerve-related ones so treatment can be targeted."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -874,6 +882,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why do I hear ringing in my ears when there is no sound around me?</summary>
+                    <p>Ringing, buzzing or hissing without an external source is called tinnitus. It usually arises from changes in the inner ear or the hearing nerve pathway, commonly after noise exposure, ear wax blockage, infection or age-related hearing changes. Because the causes vary widely, an ENT examination is the right first step to find what is driving it.</p>
+                </details>
+                <details>
+                    <summary>Will my tinnitus go away on its own?</summary>
+                    <p>Temporary tinnitus after a loud concert or a cold often settles within hours to days. Tinnitus that persists for more than a couple of weeks, occurs in one ear only, or is pulsatile (beating with your pulse) should be evaluated by an ENT specialist, as it may indicate an underlying treatable condition.</p>
+                </details>
+                <details>
+                    <summary>Is tinnitus a sign of hearing loss?</summary>
+                    <p>Very often, yes. Many people with tinnitus have some degree of hearing loss they may not have noticed. A pure tone audiometry test (Rs.500 at the clinic) along with impedance testing helps measure your hearing and often explains the tinnitus, which guides treatment options.</p>
+                </details>
+                <details>
+                    <summary>Can medicines cause ringing in the ears?</summary>
+                    <p>Yes. Very high doses of aspirin, certain antibiotics ending in "-mycin", some diuretics, anti-malarial drugs and a few cancer medicines can cause tinnitus, an effect called ototoxicity. Never stop a prescribed medicine on your own; discuss the symptom with your doctor so the medication can be reviewed safely.</p>
+                </details>
+                <details>
+                    <summary>What tests are done to find the cause of tinnitus?</summary>
+                    <p>Evaluation usually starts with an ear examination and audiometry, and may include impedance audiometry, OAE or BERA tests depending on the findings. These tests are available at Dr. Vaishali Sangole's clinic in Kharghar and help separate ear-related causes from nerve-related ones so treatment can be targeted.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -935,8 +989,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do I sneeze repeatedly every morning?", "acceptedAnswer": {"@type": "Answer", "text": "Morning sneezing bouts with a watery, itchy, blocked nose are classic signs of allergic rhinitis, often triggered by house dust and dust mites in bedding, or by cold morning air. Perennial allergic rhinitis occurs round the year, while the seasonal type appears only in certain months. An ENT consultation can confirm the diagnosis and identify your triggers."}}, {"@type": "Question", "name": "Is allergic rhinitis the same as sinusitis?", "acceptedAnswer": {"@type": "Answer", "text": "No, but they are connected. Allergic rhinitis is an allergy-driven inflammation of the nasal lining, while sinusitis is inflammation of the sinuses. Long-standing untreated allergy causes swelling that blocks the sinus openings, which can lead to sinusitis and even nasal polyps, so controlling the allergy protects the sinuses too."}}, {"@type": "Question", "name": "Can allergic rhinitis be cured permanently?", "acceptedAnswer": {"@type": "Answer", "text": "Allergic rhinitis is usually controlled rather than permanently cured. Effective management combines avoiding known allergens, antihistamines, steroid nasal sprays and, in suitable patients, desensitization (immunotherapy) which retrains the immune system over time. Most patients achieve excellent symptom control with a properly tailored plan."}}, {"@type": "Question", "name": "How do I find out what I am allergic to?", "acceptedAnswer": {"@type": "Answer", "text": "A detailed history is the starting point, followed by tests such as a blood eosinophil count, nasal smear and RAST (Radio-Allergo Sorbent Test) allergy testing, which identifies specific allergens like dust, pollen, fungi or foods. Knowing your triggers makes avoidance practical and guides desensitization treatment."}}, {"@type": "Question", "name": "What happens if nasal allergy is left untreated?", "acceptedAnswer": {"@type": "Answer", "text": "Persistent untreated allergy can lead to nasal polyps, chronic sinusitis, disturbed sleep, and worsening of associated conditions like allergic conjunctivitis and asthma. If your symptoms have lasted months or over-the-counter remedies no longer help, an ENT evaluation is worthwhile; the clinic in Kharghar can be reached at +91 9967752407."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -1046,6 +1054,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why do I sneeze repeatedly every morning?</summary>
+                    <p>Morning sneezing bouts with a watery, itchy, blocked nose are classic signs of allergic rhinitis, often triggered by house dust and dust mites in bedding, or by cold morning air. Perennial allergic rhinitis occurs round the year, while the seasonal type appears only in certain months. An ENT consultation can confirm the diagnosis and identify your triggers.</p>
+                </details>
+                <details>
+                    <summary>Is allergic rhinitis the same as sinusitis?</summary>
+                    <p>No, but they are connected. Allergic rhinitis is an allergy-driven inflammation of the nasal lining, while sinusitis is inflammation of the sinuses. Long-standing untreated allergy causes swelling that blocks the sinus openings, which can lead to sinusitis and even nasal polyps, so controlling the allergy protects the sinuses too.</p>
+                </details>
+                <details>
+                    <summary>Can allergic rhinitis be cured permanently?</summary>
+                    <p>Allergic rhinitis is usually controlled rather than permanently cured. Effective management combines avoiding known allergens, antihistamines, steroid nasal sprays and, in suitable patients, desensitization (immunotherapy) which retrains the immune system over time. Most patients achieve excellent symptom control with a properly tailored plan.</p>
+                </details>
+                <details>
+                    <summary>How do I find out what I am allergic to?</summary>
+                    <p>A detailed history is the starting point, followed by tests such as a blood eosinophil count, nasal smear and RAST (Radio-Allergo Sorbent Test) allergy testing, which identifies specific allergens like dust, pollen, fungi or foods. Knowing your triggers makes avoidance practical and guides desensitization treatment.</p>
+                </details>
+                <details>
+                    <summary>What happens if nasal allergy is left untreated?</summary>
+                    <p>Persistent untreated allergy can lead to nasal polyps, chronic sinusitis, disturbed sleep, and worsening of associated conditions like allergic conjunctivitis and asthma. If your symptoms have lasted months or over-the-counter remedies no longer help, an ENT evaluation is worthwhile; the clinic in Kharghar can be reached at +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -1107,8 +1161,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

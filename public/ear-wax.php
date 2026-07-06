@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can ear wax cause hearing loss?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A wax blockage can cause noticeably decreased hearing in the affected ear, along with a feeling of fullness or ringing. The good news is that this hearing loss is temporary and returns to normal once the wax is safely removed by a doctor."}}, {"@type": "Question", "name": "Is it safe to clean my ears with cotton buds?", "acceptedAnswer": {"@type": "Answer", "text": "No. Cotton swabs tend to push wax deeper into the ear canal, compacting it against the eardrum and creating the very blockage you are trying to prevent. The ear is self-cleaning for most people; if you feel blocked, it is safer to have the ear examined and cleaned professionally."}}, {"@type": "Question", "name": "How does an ENT doctor remove impacted ear wax?", "acceptedAnswer": {"@type": "Answer", "text": "The doctor first examines the ear with an otoscope to confirm wax is the problem, then removes it using fine instruments, suction or syringing, sometimes after softening drops for a few days. Professional removal is particularly important if there is any chance the eardrum is perforated, since home methods could damage it."}}, {"@type": "Question", "name": "Why does my ear feel blocked and noisy after swimming or bathing?", "acceptedAnswer": {"@type": "Answer", "text": "Water entering the canal can make existing wax swell, suddenly turning a partial blockage into a complete one. This causes muffled hearing, fullness and sometimes buzzing sounds. Drying the ears gently after swimming helps, but if the blocked feeling persists, get the ear checked rather than probing it yourself."}}, {"@type": "Question", "name": "Will ear wax blockage keep coming back?", "acceptedAnswer": {"@type": "Answer", "text": "It can. Some people naturally produce more wax than the ear can clear, so blockages may recur over the years. Periodic check-ups and professional cleaning when needed keep it under control; if reduced hearing persists even after wax removal, an audiometry test (Rs.500 at the clinic) can rule out other causes."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -786,6 +794,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Can ear wax cause hearing loss?</summary>
+                    <p>Yes. A wax blockage can cause noticeably decreased hearing in the affected ear, along with a feeling of fullness or ringing. The good news is that this hearing loss is temporary and returns to normal once the wax is safely removed by a doctor.</p>
+                </details>
+                <details>
+                    <summary>Is it safe to clean my ears with cotton buds?</summary>
+                    <p>No. Cotton swabs tend to push wax deeper into the ear canal, compacting it against the eardrum and creating the very blockage you are trying to prevent. The ear is self-cleaning for most people; if you feel blocked, it is safer to have the ear examined and cleaned professionally.</p>
+                </details>
+                <details>
+                    <summary>How does an ENT doctor remove impacted ear wax?</summary>
+                    <p>The doctor first examines the ear with an otoscope to confirm wax is the problem, then removes it using fine instruments, suction or syringing, sometimes after softening drops for a few days. Professional removal is particularly important if there is any chance the eardrum is perforated, since home methods could damage it.</p>
+                </details>
+                <details>
+                    <summary>Why does my ear feel blocked and noisy after swimming or bathing?</summary>
+                    <p>Water entering the canal can make existing wax swell, suddenly turning a partial blockage into a complete one. This causes muffled hearing, fullness and sometimes buzzing sounds. Drying the ears gently after swimming helps, but if the blocked feeling persists, get the ear checked rather than probing it yourself.</p>
+                </details>
+                <details>
+                    <summary>Will ear wax blockage keep coming back?</summary>
+                    <p>It can. Some people naturally produce more wax than the ear can clear, so blockages may recur over the years. Periodic check-ups and professional cleaning when needed keep it under control; if reduced hearing persists even after wax removal, an audiometry test (Rs.500 at the clinic) can rule out other causes.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -847,8 +901,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

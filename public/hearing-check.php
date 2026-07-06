@@ -7,9 +7,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vertigo Self-Assessment Quiz | Dr. Vaishali Sangole, ENT & Vertigo Clinic, Kharghar</title>
+<title>Free Online Hearing Check | Dr. Vaishali Sangole, ENT Clinic Kharghar</title>
 
-<meta name="description" content="Take a free, quick vertigo self-assessment quiz to understand your dizziness symptoms — BPPV, Meniere's disease, vestibular neuritis, or migraine patterns — and get recommended tests from Dr. Vaishali Sangole's Vertigo Clinic, Kharghar, Navi Mumbai.">
+<meta name="description" content="Take a free online hearing self-screening test using tones at different pitches and volumes for each ear. An uncalibrated screening tool by Dr. Vaishali Sangole's ENT & Vertigo Clinic, Kharghar, Navi Mumbai — not a substitute for clinical audiometry.">
 
 <meta name="keywords" content="">
 
@@ -66,10 +66,10 @@
 }
 	</style>
 
-    <link rel="canonical" href="https://entvaishalisangole.com/vertigo-quiz.php">
-    <meta property="og:title" content="Vertigo Self-Assessment Quiz | Dr. Vaishali Sangole, ENT & Vertigo Clinic, Kharghar">
-    <meta property="og:description" content="Take a free, quick vertigo self-assessment quiz to understand your dizziness symptoms — BPPV, Meniere's disease, vestibular neuritis, or migraine patterns — and get recommended tests from Dr. Vaishali Sangole's Vertigo Clinic, Kharghar, Navi Mumbai.">
-    <meta property="og:url" content="https://entvaishalisangole.com/vertigo-quiz.php">
+    <link rel="canonical" href="https://entvaishalisangole.com/hearing-check.php">
+    <meta property="og:title" content="Free Online Hearing Check | Dr. Vaishali Sangole, ENT Clinic Kharghar">
+    <meta property="og:description" content="Take a free online hearing self-screening test using tones at different pitches and volumes for each ear. An uncalibrated screening tool by Dr. Vaishali Sangole's ENT & Vertigo Clinic, Kharghar, Navi Mumbai — not a substitute for clinical audiometry.">
+    <meta property="og:url" content="https://entvaishalisangole.com/hearing-check.php">
     <meta property="og:image" content="https://entvaishalisangole.com/images/doctor-img.jpg">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
@@ -77,8 +77,8 @@
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
 
     <style>
-        .quiz-section { padding: 70px 0; background: #f7f9fb; }
-        .quiz-card {
+        .hc-section { padding: 70px 0; background: #f7f9fb; }
+        .hc-card {
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
@@ -87,9 +87,9 @@
             padding: 40px;
         }
         @media (max-width: 576px) {
-            .quiz-card { padding: 24px 18px; }
+            .hc-card { padding: 24px 18px; }
         }
-        .quiz-counter {
+        .hc-counter {
             font-size: 0.85rem;
             font-weight: 600;
             letter-spacing: 0.5px;
@@ -97,7 +97,7 @@
             color: var(--pbmit-global-color);
             margin-bottom: 10px;
         }
-        .quiz-progress-track {
+        .hc-progress-track {
             width: 100%;
             height: 8px;
             background: #e6ebf1;
@@ -105,147 +105,260 @@
             overflow: hidden;
             margin-bottom: 30px;
         }
-        .quiz-progress-fill {
+        .hc-progress-fill {
             height: 100%;
             background: var(--pbmit-global-color);
             border-radius: 999px;
             width: 0%;
             transition: width 0.3s ease;
         }
-        .quiz-question-text {
+        .hc-heading {
             font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 25px;
+            margin-bottom: 16px;
             color: #14213d;
         }
-        .quiz-options {
+        .hc-subtext {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 18px;
+        }
+        .hc-intro-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
             display: flex;
             flex-direction: column;
             gap: 14px;
-            margin-bottom: 30px;
         }
-        .quiz-option-label {
+        .hc-intro-list li {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 14px;
-            padding: 16px 20px;
-            border: 2px solid #e6ebf1;
+            padding: 14px 16px;
+            background: #f7f9fb;
+            border: 1px solid #e6ebf1;
             border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #333;
         }
-        .quiz-option-label:hover {
-            border-color: var(--pbmit-global-color);
-            background: #f0f6ff;
-        }
-        .quiz-option-label.selected {
-            border-color: var(--pbmit-global-color);
-            background: #eaf3ff;
-            font-weight: 600;
-        }
-        .quiz-option-label input[type="radio"] {
-            width: 20px;
-            height: 20px;
-            accent-color: var(--pbmit-global-color);
+        .hc-intro-list li i {
+            color: var(--pbmit-global-color);
+            font-size: 1.2rem;
+            margin-top: 2px;
             flex-shrink: 0;
         }
-        .quiz-nav-buttons {
-            display: flex;
-            justify-content: space-between;
+        .hc-btn {
+            display: inline-flex;
             align-items: center;
-            gap: 12px;
-        }
-        .quiz-btn {
-            display: inline-block;
-            padding: 12px 28px;
+            gap: 8px;
+            padding: 13px 28px;
             border-radius: 8px;
             font-weight: 600;
             font-size: 0.95rem;
             border: none;
             cursor: pointer;
             transition: all 0.2s ease;
+            text-decoration: none;
         }
-        .quiz-btn-primary {
+        .hc-btn-primary {
             background: var(--pbmit-global-color);
             color: #fff;
         }
-        .quiz-btn-primary:disabled {
+        .hc-btn-primary:disabled {
             background: #b7c3d1;
             cursor: not-allowed;
         }
-        .quiz-btn-primary:not(:disabled):hover {
+        .hc-btn-primary:not(:disabled):hover {
             filter: brightness(0.92);
             color: #fff;
         }
-        .quiz-btn-outline {
+        .hc-btn-outline {
             background: transparent;
             color: var(--pbmit-global-color);
             border: 2px solid var(--pbmit-global-color);
         }
-        .quiz-btn-outline:hover {
+        .hc-btn-outline:hover {
             background: var(--pbmit-global-color);
             color: #fff;
         }
-        #quiz-result-pane { display: none; }
-        #quiz-result-pane.active { display: block; }
-        .result-title {
-            font-size: 1.6rem;
+        .hc-btn-secondary {
+            background: transparent;
+            border: 2px solid #b7c3d1;
+            color: #555;
+        }
+        .hc-btn-secondary:hover {
+            border-color: var(--pbmit-global-color);
+            color: var(--pbmit-global-color);
+        }
+        .hc-pane { display: none; }
+        .hc-pane.active { display: block; }
+        .hc-calibration-box {
+            text-align: center;
+            padding: 26px 20px;
+            background: #f0f6ff;
+            border: 1px solid #d7e6fb;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .hc-calibration-box p {
+            margin-bottom: 16px;
+            color: #333;
+        }
+        .hc-nav-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .hc-test-stage {
+            text-align: center;
+            padding: 30px 10px;
+        }
+        .hc-ear-label {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--pbmit-global-color);
+            margin-bottom: 8px;
+        }
+        .hc-freq-label {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #14213d;
+            margin-bottom: 6px;
+        }
+        .hc-level-label {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 26px;
+        }
+        .hc-play-indicator {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: var(--pbmit-global-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px auto;
+            color: #fff;
+            font-size: 2rem;
+            transition: transform 0.15s ease;
+        }
+        .hc-play-indicator.pulsing {
+            animation: hcPulse 1.5s ease-in-out;
+        }
+        @keyframes hcPulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(var(--pbmit-global-color-rgb, 0,0,0), 0.4); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+        .hc-response-row {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .hc-response-row .hc-btn {
+            min-width: 170px;
+            justify-content: center;
+        }
+        .hc-btn-heard {
+            background: #2e9e5b;
+            color: #fff;
+        }
+        .hc-btn-heard:hover { color: #fff; filter: brightness(0.95); }
+        .hc-btn-not-heard {
+            background: transparent;
+            border: 2px solid #b7c3d1;
+            color: #555;
+        }
+        .hc-btn-not-heard:hover {
+            border-color: #c0392b;
+            color: #c0392b;
+        }
+        .hc-fallback-msg {
+            display: none;
+            background: #fdecea;
+            border: 1px solid #f5c2bc;
+            color: #7a2e25;
+            padding: 16px 18px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .hc-fallback-msg.active { display: block; }
+        #hc-result-pane { display: none; }
+        #hc-result-pane.active { display: block; }
+        .hc-result-verdict {
+            font-size: 1.5rem;
             font-weight: 800;
             color: var(--pbmit-global-color);
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
-        .result-desc {
+        .hc-result-desc {
             font-size: 1rem;
             line-height: 1.7;
             color: #333;
             margin-bottom: 25px;
         }
-        .result-tests-heading {
+        .hc-ear-result-block {
+            margin-bottom: 24px;
+        }
+        .hc-ear-result-title {
             font-size: 1.05rem;
             font-weight: 700;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             color: #14213d;
         }
-        .result-tests-container {
+        .hc-bar-row {
             display: flex;
-            flex-direction: column;
+            align-items: center;
             gap: 12px;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
         }
-        .assessment-test-card {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            padding: 16px 18px;
-            background: #f7f9fb;
-            border: 1px solid #e6ebf1;
-            border-radius: 10px;
-        }
-        .assessment-test-card i {
-            font-size: 1.4rem;
-            color: var(--pbmit-global-color);
-            margin-top: 3px;
-        }
-        .assessment-test-card h5 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-            color: #14213d;
-        }
-        .assessment-test-card p {
-            font-size: 0.9rem;
+        .hc-bar-freq {
+            width: 60px;
+            flex-shrink: 0;
+            font-size: 0.85rem;
+            font-weight: 600;
             color: #555;
-            margin: 0;
         }
-        .result-cta-row {
+        .hc-bar-track {
+            flex: 1;
+            height: 22px;
+            background: #e6ebf1;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .hc-bar-fill {
+            height: 100%;
+            border-radius: 6px;
+        }
+        .hc-bar-fill.level-loud { width: 25%; background: #c0392b; }
+        .hc-bar-fill.level-medium { width: 55%; background: #e2a53b; }
+        .hc-bar-fill.level-soft { width: 100%; background: #2e9e5b; }
+        .hc-bar-fill.level-none { width: 4%; background: #6c757d; }
+        .hc-bar-status {
+            width: 130px;
+            flex-shrink: 0;
+            font-size: 0.82rem;
+            color: #555;
+            text-align: right;
+        }
+        .hc-result-cta-row {
             display: flex;
             flex-wrap: wrap;
             gap: 14px;
             margin-bottom: 20px;
         }
-        .result-cta-row a, .result-cta-row button {
+        .hc-result-cta-row a, .hc-result-cta-row button {
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -257,22 +370,22 @@
             border: none;
             cursor: pointer;
         }
-        .btn-book-consult {
+        .btn-book-audiometry {
             background: var(--pbmit-global-color);
             color: #fff;
         }
-        .btn-book-consult:hover { color: #fff; filter: brightness(0.92); }
-        .btn-whatsapp-share {
+        .btn-book-audiometry:hover { color: #fff; filter: brightness(0.92); }
+        .btn-whatsapp-share-hc {
             background: #25D366;
             color: #fff;
         }
-        .btn-whatsapp-share:hover { color: #fff; filter: brightness(0.95); }
-        .btn-retake {
+        .btn-whatsapp-share-hc:hover { color: #fff; filter: brightness(0.95); }
+        .btn-retake-hc {
             background: transparent;
             border: 2px solid #b7c3d1 !important;
             color: #555;
         }
-        .quiz-disclaimer {
+        .hc-disclaimer {
             font-size: 0.82rem;
             color: #777;
             border-top: 1px solid #e6ebf1;
@@ -280,9 +393,14 @@
             margin-top: 10px;
             font-style: italic;
         }
-        .red-flag-warning {
-            color: #c0392b;
-            font-weight: 700;
+        .hc-disclaimer-top {
+            font-size: 0.85rem;
+            color: #7a2e25;
+            background: #fdecea;
+            border: 1px solid #f5c2bc;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 22px;
         }
     </style>
 </head>
@@ -516,7 +634,7 @@
             <div class="pbmit-title-bar-content-inner">
                 <div class="pbmit-tbar">
                     <div class="pbmit-tbar-inner container">
-                        <h1 class="pbmit-tbar-title">Vertigo Self-Assessment</h1>
+                        <h1 class="pbmit-tbar-title">Hearing Check</h1>
                     </div>
                 </div>
                 <div class="pbmit-breadcrumb">
@@ -525,7 +643,7 @@
                             <a href="index.php" class="home"><span>Home</span></a>
                         </span>
                         <span class="sep">-</span>
-                        <span class="post-root post post-post current-item">Vertigo Self-Assessment</span>
+                        <span class="post-root post post-post current-item">Hearing Check</span>
                     </div>
                 </div>
             </div>
@@ -533,43 +651,79 @@
     </div>
 </div>
 
-<section class="quiz-section">
+<section class="hc-section">
     <div class="container">
-        <div class="quiz-card">
+        <div class="hc-card">
 
-            <!-- Intro copy -->
-            <p style="text-align:center; color:#555; margin-bottom:30px;">Answer 5 quick questions about your dizziness or vertigo symptoms to get a personalized preliminary insight and recommended diagnostic tests. This takes less than 2 minutes.</p>
+            <div class="hc-disclaimer-top">
+                <strong>Screening only, not a diagnosis:</strong> This tool uses your device's speakers or headphones and is <strong>not calibrated</strong> to clinical audiometric standards. It cannot measure hearing thresholds in dB HL. Results only indicate whether a follow-up clinical hearing test may be worthwhile.
+            </div>
 
-            <!-- Wizard Pane -->
-            <div id="quiz-wizard-pane">
-                <div class="quiz-counter" id="quiz-counter-text">Question 1 of 5</div>
-                <div class="quiz-progress-track">
-                    <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+            <!-- Web Audio unsupported fallback -->
+            <div class="hc-fallback-msg" id="hc-fallback-msg">
+                <strong>Sorry — this browser does not support the Web Audio API</strong>, which is required to generate test tones. Please try again in an updated version of Chrome, Edge, Firefox, or Safari, or book a Pure Tone Audiometry test directly with the clinic.
+                <br><br>
+                <a href="contact.php" class="hc-btn hc-btn-primary" style="margin-top:10px;">Book Pure Tone Audiometry</a>
+            </div>
+
+            <!-- Intro Pane -->
+            <div class="hc-pane active" id="hc-intro-pane">
+                <div class="hc-heading">Free Online Hearing Self-Screening</div>
+                <p class="hc-subtext">This quick screening plays a series of soft tones at different pitches in each ear to give you a rough idea of whether a proper clinical hearing test is worth booking. It takes about 3–4 minutes.</p>
+
+                <ul class="hc-intro-list">
+                    <li><i class="fa-solid fa-headphones"></i> <span><strong>Use headphones</strong> (wired or wireless) for accurate left/right ear separation. Do not use a speakerphone or laptop speakers.</span></li>
+                    <li><i class="fa-solid fa-volume-xmark"></i> <span>Find a <strong>quiet room</strong> with minimal background noise.</span></li>
+                    <li><i class="fa-solid fa-sliders"></i> <span>You will hear a <strong>1 kHz calibration tone</strong> first — set your device volume to a comfortable, clearly audible level and do not change it again during the test.</span></li>
+                    <li><i class="fa-solid fa-ear-listen"></i> <span>For each tone, click <strong>"I heard it"</strong> only if you actually hear a sound, even faintly. Click <strong>"I didn't hear it"</strong> if you are not sure or hear nothing.</span></li>
+                </ul>
+
+                <div class="hc-calibration-box" id="hc-calibration-box">
+                    <p><strong>Step 1: Volume Calibration</strong><br>Click below to play a steady reference tone. Adjust your device volume until it is clearly audible and comfortable — not too loud.</p>
+                    <button type="button" class="hc-btn hc-btn-outline" id="hc-play-calibration-btn"><i class="fa-solid fa-volume-high"></i> Play Calibration Tone</button>
                 </div>
 
-                <div id="quiz-question-container"></div>
+                <div class="hc-nav-row">
+                    <span></span>
+                    <button type="button" class="hc-btn hc-btn-primary" id="hc-start-test-btn" disabled>Start Hearing Check</button>
+                </div>
+            </div>
 
-                <div class="quiz-nav-buttons">
-                    <button type="button" id="quiz-prev-btn" class="quiz-btn quiz-btn-outline">Previous</button>
-                    <button type="button" id="quiz-next-btn" class="quiz-btn quiz-btn-primary" disabled>Next Question</button>
+            <!-- Test Pane -->
+            <div class="hc-pane" id="hc-test-pane">
+                <div class="hc-counter" id="hc-counter-text">Tone 1 of 30</div>
+                <div class="hc-progress-track">
+                    <div class="hc-progress-fill" id="hc-progress-fill"></div>
+                </div>
+
+                <div class="hc-test-stage">
+                    <div class="hc-ear-label" id="hc-ear-label">LEFT EAR</div>
+                    <div class="hc-freq-label" id="hc-freq-label">1000 Hz</div>
+                    <div class="hc-level-label" id="hc-level-label">Listen carefully...</div>
+
+                    <div class="hc-play-indicator" id="hc-play-indicator"><i class="fa-solid fa-ear-listen"></i></div>
+
+                    <div class="hc-response-row">
+                        <button type="button" class="hc-btn hc-btn-heard" id="hc-heard-btn" disabled><i class="fa-solid fa-check"></i> I heard it</button>
+                        <button type="button" class="hc-btn hc-btn-not-heard" id="hc-not-heard-btn" disabled><i class="fa-solid fa-xmark"></i> I didn't hear it</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Result Pane -->
-            <div id="quiz-result-pane">
-                <div class="result-title" id="result-title"></div>
-                <div class="result-desc" id="result-desc"></div>
+            <div class="hc-pane" id="hc-result-pane">
+                <div class="hc-result-verdict" id="hc-result-verdict"></div>
+                <div class="hc-result-desc" id="hc-result-desc"></div>
 
-                <div class="result-tests-heading">Recommended Diagnostic Tests</div>
-                <div class="result-tests-container" id="result-tests-container"></div>
+                <div id="hc-result-bars-container"></div>
 
-                <div class="result-cta-row">
-                    <a href="contact.php" class="btn-book-consult" id="quiz-book-cta"><i class="fa-solid fa-calendar-check"></i> Book Consultation</a>
-                    <button type="button" class="btn-whatsapp-share" id="quiz-whatsapp-share"><i class="fa-brands fa-whatsapp"></i> Share Result on WhatsApp</button>
-                    <button type="button" class="quiz-btn btn-retake" id="quiz-reset-btn">Retake Quiz</button>
+                <div class="hc-result-cta-row">
+                    <a href="contact.php" class="btn-book-audiometry" id="hc-book-cta"><i class="fa-solid fa-calendar-check"></i> Book Pure Tone Audiometry (Rs. 500)</a>
+                    <button type="button" class="btn-whatsapp-share-hc" id="hc-whatsapp-share"><i class="fa-brands fa-whatsapp"></i> Share Result on WhatsApp</button>
+                    <button type="button" class="hc-btn btn-retake-hc" id="hc-reset-btn">Restart Screening</button>
                 </div>
 
-                <p class="quiz-disclaimer">This self-assessment is informational and not a diagnosis. Please consult Dr. Sangole for clinical evaluation.</p>
+                <p class="hc-disclaimer">This screening cannot replace clinical audiometry. It is an uncalibrated, informal check using your own device's speakers/headphones and ambient room noise, and does not measure hearing thresholds in dB HL. Please consult Dr. Sangole for a proper Pure Tone Audiometry evaluation.</p>
             </div>
 
         </div>
@@ -639,7 +793,7 @@
                         <h2 class="widget-title">Contact Us</h2>
                         <div class="pbmit-contact-widget-lines">
                             <div class="pbmit-contact-widget-line pbmit-contact-widget-address">
-                                <strong>Dr. Vaishali Sangole’s ENT Clinic</strong>
+                                <strong>Dr. Vaishali Sangole's ENT Clinic</strong>
                                 <br>
                                 18, Plot 14, Meera Arcade Building, Sector 20, Landmark: Near Shilp Chowk, Navi Mumbai
                             </div>
@@ -713,343 +867,405 @@
 <script src="revolution/rbtools.min.js"></script>
 <script src="revolution/rs6.min.js"></script>
 
-<!-- Vertigo Self-Assessment Quiz Logic -->
+<!-- Hearing Self-Screening Tool Logic -->
 <script>
 (function () {
     "use strict";
 
-    // Diagnostic tests reference data (subset relevant to vertigo assessment results)
-    var testsData = {
-        vng: { title: "Videonystagmography (VNG)", icon: "fa-video", desc: "The gold standard in vertigo diagnostics. Evaluates inner ear balance function by recording involuntary eye movements (nystagmus)." },
-        bera: { title: "BERA (Brainstem Auditory Evoked Response)", icon: "fa-baby", desc: "An objective hearing test that measures electrical activity along the hearing nerve to the brain stem in response to sound clicks." },
-        ecog: { title: "Electrocochleography (ECoG)", icon: "fa-wave-square", desc: "Measures electrical potentials in the cochlea, primarily used to diagnose fluid pressure build-up (Meniere's Disease)." },
-        vemp: { title: "Vestibular Evoked Myogenic Potentials (VEMP)", icon: "fa-running", desc: "Measures muscle responses evoked by loud sounds, reflecting the health of specific inner ear chambers and the vestibular nerve." },
-        audiometry: { title: "Pure Tone Audiometry & Tympanometry", icon: "fa-headphones", desc: "Standard hearing evaluation testing the quietest sounds you can hear at different pitches and eardrum movement." },
-        cardiac: { title: "Cardiovascular / General Medical Workup", icon: "fa-heart-pulse", desc: "Blood pressure, ECG, blood sugar and general physician evaluation to rule out cardiovascular or metabolic causes of lightheadedness." },
-        neuro: { title: "Neurological Evaluation", icon: "fa-brain", desc: "Clinical neurological examination, and where indicated, MRI brain, to rule out central nervous system causes of imbalance or fainting." }
-    };
+    var FREQUENCIES = [500, 1000, 2000, 4000, 8000];
+    var LEVELS = [
+        { gain: 0.5, tag: "loud" },
+        { gain: 0.15, tag: "medium" },
+        { gain: 0.04, tag: "soft" }
+    ];
+    var TONE_DURATION = 1.5; // seconds
+    var RAMP_TIME = 0.03; // 30ms fade in/out
 
-    var assessment = {
-        currentStep: 0,
-        answers: {},
-        questions: [
-            {
-                text: "How would you describe your main dizzy sensation?",
-                key: "sensation",
-                options: [
-                    { label: "The room spinning around you, or you spinning around", value: "spinning" },
-                    { label: "General imbalance, off-balance, or unsteadiness", value: "imbalance" },
-                    { label: "Fainting feeling or feeling like you might black out", value: "fainting" },
-                    { label: "Lightheadedness or a floating sensation in the head", value: "lightheaded" }
-                ]
-            },
-            {
-                text: "Does the sensation happen when rolling over in bed, bending down, or looking up?",
-                key: "movement_trigger",
-                options: [
-                    { label: "Yes, definitely. Turning in bed triggers it instantly", value: "positional_high" },
-                    { label: "Sometimes, movements make it slightly worse", value: "positional_medium" },
-                    { label: "No, the sensation is constant regardless of head movements", value: "constant" },
-                    { label: "No, it is triggered by loud noises or stress", value: "other" }
-                ]
-            },
-            {
-                text: "Are you experiencing any hearing changes, ringing (tinnitus), or ear fullness?",
-                key: "ear_symptoms",
-                options: [
-                    { label: "Yes, I have hearing loss and/or ringing in one ear", value: "unilateral_ear" },
-                    { label: "Yes, I have hearing changes/ringing in both ears", value: "bilateral_ear" },
-                    { label: "No, my hearing is completely unaffected", value: "no_ear" }
-                ]
-            },
-            {
-                text: "How long does a typical spinning or dizzy episode last?",
-                key: "duration",
-                options: [
-                    { label: "A few seconds to less than a minute", value: "seconds" },
-                    { label: "Several hours to half a day", value: "hours" },
-                    { label: "Constant, lasting for days or weeks", value: "days_weeks" },
-                    { label: "It varies or is just a fleeting lightheadedness", value: "variable" }
-                ]
-            },
-            {
-                text: "Do you experience double vision, numbness, or difficulty speaking during the episodes?",
-                key: "red_flags",
-                options: [
-                    { label: "Yes, I have experienced these symptoms", value: "yes_red" },
-                    { label: "No, absolutely none of these", value: "no_red" }
-                ]
-            }
-        ],
+    var screening = {
+
+        audioCtx: null,
+        supported: true,
+
+        // Build the full test sequence: ear -> frequency -> descending levels
+        sequence: [],
+        currentIndex: 0,
+        currentSourceNode: null,
+
+        // results[ear][frequency] = "loud" | "medium" | "soft" | "none"
+        results: { left: {}, right: {} },
+
+        // Tracks whether the current tone has actually been played (enables response buttons)
+        toneReady: false,
 
         init: function () {
-            this.renderQuestion();
-
-            var prevBtn = document.getElementById("quiz-prev-btn");
-            var nextBtn = document.getElementById("quiz-next-btn");
-
-            if (prevBtn) prevBtn.addEventListener("click", this.navigate.bind(this, -1));
-            if (nextBtn) nextBtn.addEventListener("click", this.navigate.bind(this, 1));
-
-            var resetBtn = document.getElementById("quiz-reset-btn");
-            if (resetBtn) resetBtn.addEventListener("click", this.resetQuiz.bind(this));
-
-            var shareBtn = document.getElementById("quiz-whatsapp-share");
-            if (shareBtn) shareBtn.addEventListener("click", this.shareResult.bind(this));
+            this.buildSequence();
+            this.bindIntroEvents();
         },
 
-        renderQuestion: function () {
+        buildSequence: function () {
+            var seq = [];
+            ["left", "right"].forEach(function (ear) {
+                FREQUENCIES.forEach(function (freq) {
+                    LEVELS.forEach(function (level) {
+                        seq.push({ ear: ear, freq: freq, gain: level.gain, tag: level.tag });
+                    });
+                });
+            });
+            this.sequence = seq;
+        },
+
+        ensureAudioContext: function () {
+            if (this.audioCtx) return true;
+            try {
+                var Ctx = window.AudioContext || window.webkitAudioContext;
+                if (!Ctx) throw new Error("Web Audio API not supported");
+                this.audioCtx = new Ctx();
+                return true;
+            } catch (err) {
+                this.supported = false;
+                var fallbackEl = document.getElementById("hc-fallback-msg");
+                if (fallbackEl) fallbackEl.classList.add("active");
+                return false;
+            }
+        },
+
+        // Plays a sine tone. pan: -1 (left) to 1 (right), 0 = both ears (calibration).
+        playTone: function (freq, gain, pan, duration, onEnded) {
             var self = this;
-            var quizContentEl = document.getElementById("quiz-question-container");
-            if (!quizContentEl) return;
+            if (!this.ensureAudioContext()) return;
 
-            quizContentEl.innerHTML = "";
+            try {
+                var ctx = this.audioCtx;
+                if (ctx.state === "suspended") ctx.resume();
 
-            var q = this.questions[this.currentStep];
-            var pane = document.createElement("div");
-            pane.className = "assessment-question-pane active";
+                var osc = ctx.createOscillator();
+                osc.type = "sine";
+                osc.frequency.value = freq;
 
-            var title = document.createElement("h4");
-            title.className = "quiz-question-text";
-            title.innerText = q.text;
-            pane.appendChild(title);
+                var gainNode = ctx.createGain();
+                gainNode.gain.setValueAtTime(0, ctx.currentTime);
 
-            var optionsContainer = document.createElement("div");
-            optionsContainer.className = "quiz-options";
-
-            q.options.forEach(function (opt) {
-                var label = document.createElement("label");
-                label.className = "quiz-option-label";
-
-                var input = document.createElement("input");
-                input.type = "radio";
-                input.name = "quiz-" + q.key;
-                input.value = opt.value;
-
-                if (self.answers[q.key] === opt.value) {
-                    input.checked = true;
-                    label.classList.add("selected");
+                if (typeof ctx.createStereoPanner === "function") {
+                    var panner = ctx.createStereoPanner();
+                    panner.pan.value = pan;
+                    gainNode.connect(panner);
+                    panner.connect(ctx.destination);
+                } else {
+                    gainNode.connect(ctx.destination);
                 }
 
-                input.addEventListener("change", function () {
-                    optionsContainer.querySelectorAll(".quiz-option-label").forEach(function (l) {
-                        l.classList.remove("selected");
-                    });
-                    label.classList.add("selected");
-                    self.answers[q.key] = opt.value;
+                osc.connect(gainNode);
 
-                    var nextBtnEl = document.getElementById("quiz-next-btn");
-                    if (nextBtnEl) nextBtnEl.disabled = false;
+                var now = ctx.currentTime;
+                var rampEnd = now + RAMP_TIME;
+                var releaseStart = now + duration - RAMP_TIME;
+                var end = now + duration;
+
+                gainNode.gain.linearRampToValueAtTime(gain, rampEnd);
+                gainNode.gain.setValueAtTime(gain, releaseStart);
+                gainNode.gain.linearRampToValueAtTime(0, end);
+
+                osc.start(now);
+                osc.stop(end);
+
+                osc.onended = function () {
+                    try { osc.disconnect(); } catch (e) {}
+                    try { gainNode.disconnect(); } catch (e) {}
+                    if (typeof onEnded === "function") onEnded();
+                };
+
+                this.currentSourceNode = osc;
+            } catch (err) {
+                this.supported = false;
+                var fallbackEl = document.getElementById("hc-fallback-msg");
+                if (fallbackEl) fallbackEl.classList.add("active");
+            }
+        },
+
+        bindIntroEvents: function () {
+            var self = this;
+
+            var calibBtn = document.getElementById("hc-play-calibration-btn");
+            if (calibBtn) {
+                calibBtn.addEventListener("click", function () {
+                    if (!self.ensureAudioContext()) return;
+                    self.playTone(1000, 0.2, 0, 1.5, null);
+                    var startBtn = document.getElementById("hc-start-test-btn");
+                    if (startBtn) startBtn.disabled = false;
                 });
+            }
 
-                var span = document.createElement("span");
-                span.innerText = opt.label;
+            var startBtn = document.getElementById("hc-start-test-btn");
+            if (startBtn) {
+                startBtn.addEventListener("click", function () {
+                    self.showPane("hc-test-pane");
+                    self.currentIndex = 0;
+                    self.playCurrentTone();
+                });
+            }
 
-                label.appendChild(input);
-                label.appendChild(span);
-                optionsContainer.appendChild(label);
+            var heardBtn = document.getElementById("hc-heard-btn");
+            if (heardBtn) heardBtn.addEventListener("click", function () { self.recordResponse(true); });
+
+            var notHeardBtn = document.getElementById("hc-not-heard-btn");
+            if (notHeardBtn) notHeardBtn.addEventListener("click", function () { self.recordResponse(false); });
+
+            var resetBtn = document.getElementById("hc-reset-btn");
+            if (resetBtn) resetBtn.addEventListener("click", function () { self.restart(); });
+
+            var shareBtn = document.getElementById("hc-whatsapp-share");
+            if (shareBtn) shareBtn.addEventListener("click", function () { self.shareResult(); });
+        },
+
+        showPane: function (paneId) {
+            ["hc-intro-pane", "hc-test-pane", "hc-result-pane"].forEach(function (id) {
+                var el = document.getElementById(id);
+                if (!el) return;
+                if (id === paneId) el.classList.add("active");
+                else el.classList.remove("active");
             });
+        },
 
-            pane.appendChild(optionsContainer);
-            quizContentEl.appendChild(pane);
+        playCurrentTone: function () {
+            var self = this;
+            var step = this.sequence[this.currentIndex];
+            if (!step) { this.computeAndShowResults(); return; }
 
-            // Update counter
-            var counterEl = document.getElementById("quiz-counter-text");
-            if (counterEl) counterEl.innerText = "Question " + (this.currentStep + 1) + " of " + this.questions.length;
+            // Once a frequency/ear combo is resolved (heard at some level, or not heard even at
+            // the loudest level), skip any remaining queued (softer) levels for that same
+            // frequency/ear and move straight to the next step in the sequence.
+            if (this.isFrequencyResolved(step.ear, step.freq)) {
+                this.currentIndex++;
+                this.playCurrentTone();
+                return;
+            }
 
-            // Update progress bar
-            var progressPercent = ((this.currentStep + 1) / this.questions.length) * 100;
-            var progressFillEl = document.getElementById("quiz-progress-fill");
+            var counterEl = document.getElementById("hc-counter-text");
+            if (counterEl) counterEl.innerText = "Tone " + (this.currentIndex + 1) + " of " + this.sequence.length;
+
+            var progressPercent = ((this.currentIndex + 1) / this.sequence.length) * 100;
+            var progressFillEl = document.getElementById("hc-progress-fill");
             if (progressFillEl) progressFillEl.style.width = progressPercent + "%";
 
-            // Update navigation buttons
-            var prevBtn = document.getElementById("quiz-prev-btn");
-            var nextBtn = document.getElementById("quiz-next-btn");
+            var earLabelEl = document.getElementById("hc-ear-label");
+            if (earLabelEl) earLabelEl.innerText = step.ear.toUpperCase() + " EAR";
 
-            if (prevBtn) prevBtn.style.visibility = this.currentStep === 0 ? "hidden" : "visible";
+            var freqLabelEl = document.getElementById("hc-freq-label");
+            if (freqLabelEl) freqLabelEl.innerText = step.freq + " Hz";
 
-            if (nextBtn) {
-                nextBtn.innerText = this.currentStep === this.questions.length - 1 ? "Get Results" : "Next Question";
-                nextBtn.disabled = !this.answers[q.key];
+            var levelLabelEl = document.getElementById("hc-level-label");
+            if (levelLabelEl) levelLabelEl.innerText = "Listen carefully...";
+
+            var heardBtn = document.getElementById("hc-heard-btn");
+            var notHeardBtn = document.getElementById("hc-not-heard-btn");
+            if (heardBtn) heardBtn.disabled = true;
+            if (notHeardBtn) notHeardBtn.disabled = true;
+
+            var indicatorEl = document.getElementById("hc-play-indicator");
+            if (indicatorEl) {
+                indicatorEl.classList.remove("pulsing");
+                void indicatorEl.offsetWidth; // restart animation
+                indicatorEl.classList.add("pulsing");
             }
+
+            var pan = step.ear === "left" ? -1 : 1;
+
+            this.toneReady = false;
+            this.playTone(step.freq, step.gain, pan, TONE_DURATION, function () {
+                self.toneReady = true;
+                if (heardBtn) heardBtn.disabled = false;
+                if (notHeardBtn) notHeardBtn.disabled = false;
+                if (levelLabelEl) levelLabelEl.innerText = "Did you hear the tone?";
+            });
         },
 
-        navigate: function (dir) {
-            this.currentStep += dir;
-            if (this.currentStep < 0) this.currentStep = 0;
+        isFrequencyResolved: function (ear, freq) {
+            return Object.prototype.hasOwnProperty.call(this.results[ear], freq);
+        },
 
-            if (this.currentStep >= this.questions.length) {
-                this.showResults();
+        recordResponse: function (heard) {
+            if (!this.toneReady) return;
+
+            var step = this.sequence[this.currentIndex];
+            if (!step) return;
+
+            if (heard) {
+                // Heard at this volume -> record the softest level heard so far for this
+                // frequency/ear. Levels are tested loud -> medium -> soft, so the most recent
+                // "heard" response always reflects the softest level confirmed so far.
+                this.results[step.ear][step.freq] = step.tag;
             } else {
-                this.renderQuestion();
+                // Not heard at this level. Since levels only get quieter from here, the patient
+                // will not hear the remaining (softer) levels either, so resolve this
+                // frequency/ear immediately as "none" and skip the softer levels via
+                // isFrequencyResolved().
+                this.results[step.ear][step.freq] = "none";
             }
+
+            this.currentIndex++;
+            this.playCurrentTone();
         },
 
-        // Core diagnostic-mapping logic. Every combination of answers produces a
-        // specific result with recommended tests -- no generic fallback branch.
-        computeResult: function (ans) {
-            var isRedFlag = ans.red_flags === "yes_red";
+        computeAndShowResults: function () {
+            this.showPane("hc-result-pane");
+            this.renderResults();
+        },
 
-            if (isRedFlag) {
+        // Verdict logic based on how many ear/frequency combinations were "not heard" at all,
+        // or only heard at the loudest level.
+        computeVerdict: function () {
+            var totalCombos = 0;
+            var notHeardCount = 0;
+            var loudOnlyCount = 0;
+
+            ["left", "right"].forEach(function (ear) {
+                FREQUENCIES.forEach(function (freq) {
+                    totalCombos++;
+                    var tag = this.results[ear][freq];
+                    if (tag === "none") notHeardCount++;
+                    else if (tag === "loud") loudOnlyCount++;
+                }, this);
+            }, this);
+
+            if (notHeardCount === 0 && loudOnlyCount === 0) {
                 return {
-                    title: "Neurological Evaluation Recommended",
-                    desc: "You indicated double vision, numbness, or difficulty speaking during your episodes. These symptoms can be associated with central nervous system issues and require prompt medical attention. Please consult a medical professional immediately.",
-                    tests: ["neuro", "vng", "audiometry"],
-                    redFlag: true
+                    verdict: "No obvious difficulty detected",
+                    desc: "You responded to soft or medium-volume tones across all frequencies tested in both ears. This screening did not flag any obvious difficulty, but remember this is an uncalibrated, informal check — not a clinical measurement.",
+                    level: "good"
                 };
             }
 
-            if (ans.sensation === "spinning") {
-                if (ans.movement_trigger === "positional_high" && ans.duration === "seconds") {
-                    return {
-                        title: "Likely Positional Vertigo (BPPV)",
-                        desc: "A spinning sensation lasting only seconds, triggered specifically by head movements (like turning in bed or looking up), is highly characteristic of Benign Paroxysmal Positional Vertigo (BPPV). This occurs when small calcium crystals drift into the inner ear balance canals. BPPV is usually curable in-clinic with a repositioning maneuver (Epley's).",
-                        tests: ["vng"]
-                    };
-                }
-                if (ans.ear_symptoms !== "no_ear" && ans.duration === "hours") {
-                    return {
-                        title: "Potential Meniere's Disease / Endolymphatic Hydrops",
-                        desc: "Spinning vertigo lasting hours, combined with hearing changes, ringing (tinnitus), or a clogged/full feeling in the ear" + (ans.ear_symptoms === "bilateral_ear" ? "s" : "") + ", is a hallmark pattern of Meniere's Disease. This is caused by fluid pressure fluctuations in the inner ear and is managed with diet changes, medication, and monitoring.",
-                        tests: ["vng", "ecog", "vemp", "audiometry"]
-                    };
-                }
-                if (ans.duration === "days_weeks") {
-                    return {
-                        title: "Potential Labyrinthitis or Vestibular Neuritis",
-                        desc: "A sudden, intense spinning sensation that persists constantly for days is typically caused by inflammation of the inner ear or balance nerve, often following a viral cold. If hearing is also reduced it may be labyrinthitis; if hearing is normal it is more likely vestibular neuritis.",
-                        tests: ["vng", "audiometry", "bera"]
-                    };
-                }
-                // Remaining spinning combinations: positional_medium / constant / other trigger,
-                // with "seconds"/"variable" duration and no immediate BPPV/Meniere's/neuritis match.
-                // Still spinning-predominant, so a BPPV-spectrum / general vertigo work-up is advised.
+            if (notHeardCount >= 1) {
                 return {
-                    title: "Vertigo Pattern Consistent with Positional/Episodic Balance Disorder",
-                    desc: "Your spinning episodes don't fit one single classic pattern exactly, but a positional or episodic vestibular disorder (such as an atypical BPPV variant or early-stage inner ear imbalance) is likely. A full vestibular work-up will pinpoint the exact cause and canal involved.",
-                    tests: ans.ear_symptoms === "bilateral_ear" ? ["vng", "audiometry"] : ["vng"]
+                    verdict: "Screening suggests possible hearing difficulty",
+                    desc: "There were one or more frequencies in one or both ears where you did not hear the tone even at the loudest level tested. This pattern is worth following up with a clinical hearing test to rule out or confirm hearing loss.",
+                    level: "concern"
                 };
             }
 
-            if (ans.sensation === "imbalance") {
-                if (ans.movement_trigger === "constant") {
-                    return {
-                        title: "Constant Imbalance — Vestibular/Neurological Evaluation Advised",
-                        desc: "Persistent unsteadiness that does not change with head position, rather than a spinning sensation, points towards a vestibular or neurological cause rather than a simple positional inner-ear problem. This pattern warrants a broader neuro-otological evaluation, particularly to check both inner ears and balance pathways.",
-                        tests: ans.ear_symptoms === "bilateral_ear" ? ["vng", "vemp", "neuro", "audiometry"] : ["vng", "vemp", "neuro"]
-                    };
-                }
-                return {
-                    title: "Chronic Vestibulopathy or Unsteadiness",
-                    desc: "Feeling off-balance or unsteady (without a violent spinning sensation) can point to bilateral vestibular weakness, age-related balance decline, or a mild vestibular/neck-related issue. Diagnostic mapping will help isolate the exact root cause.",
-                    tests: ans.ear_symptoms === "bilateral_ear" ? ["vng", "vemp", "audiometry", "bera"] : ["vng", "vemp", "audiometry"]
-                };
-            }
-
-            if (ans.sensation === "lightheaded") {
-                return {
-                    title: "Lightheadedness — Cardiovascular / General Medical Workup Suggested",
-                    desc: "A floating or lightheaded sensation, rather than true spinning vertigo, is often related to blood pressure changes, blood sugar fluctuations, dehydration, anxiety, or other cardiovascular/metabolic causes rather than the inner ear. A general physician workup (BP, ECG, blood sugar) alongside a baseline ENT check is recommended.",
-                    tests: ans.ear_symptoms === "bilateral_ear" ? ["cardiac", "audiometry"] : ["cardiac", "vng"]
-                };
-            }
-
-            if (ans.sensation === "fainting") {
-                return {
-                    title: "Pre-Syncope Pattern — Cardiovascular & Neurological Evaluation Recommended",
-                    desc: "A fainting or blacking-out sensation (pre-syncope) is frequently linked to a drop in blood pressure, heart rhythm changes, or a neurological/vasovagal trigger rather than an inner-ear balance disorder. This pattern should be evaluated promptly with a cardiovascular and neurological assessment alongside ENT/vestibular testing to rule out overlapping causes.",
-                    tests: ans.ear_symptoms === "bilateral_ear" ? ["cardiac", "neuro", "audiometry"] : ["cardiac", "neuro", "vng"]
-                };
-            }
-
-            // Should not be reached because "sensation" always has one of the four values above,
-            // but kept as an explicit final safety net per spec (no silent generic fallback).
             return {
-                title: "General Balance Assessment Needed",
-                desc: "Your symptoms suggest a mixed or atypical balance concern. A detailed otoneurological checkup is advised to pinpoint the exact cause.",
-                tests: ["vng", "audiometry"]
+                verdict: "Possible hearing difficulty at some frequencies",
+                desc: "You needed the loudest volume to hear the tone at some frequencies. While this can sometimes just reflect device volume or background noise, it can also indicate reduced sensitivity at those pitches and is worth checking clinically.",
+                level: "mild"
             };
         },
 
-        lastResult: null,
+        renderResults: function () {
+            var verdict = this.computeVerdict();
+            this.lastVerdict = verdict;
 
-        showResults: function () {
-            var quizWizard = document.getElementById("quiz-wizard-pane");
-            var quizResult = document.getElementById("quiz-result-pane");
+            var verdictEl = document.getElementById("hc-result-verdict");
+            var descEl = document.getElementById("hc-result-desc");
+            if (verdictEl) verdictEl.innerText = verdict.verdict;
+            if (descEl) descEl.innerText = verdict.desc;
 
-            if (quizWizard) quizWizard.style.display = "none";
-            if (quizResult) quizResult.classList.add("active");
+            var barsContainer = document.getElementById("hc-result-bars-container");
+            if (!barsContainer) return;
+            barsContainer.innerHTML = "";
 
-            var ans = this.answers;
-            var result = this.computeResult(ans);
-            this.lastResult = result;
+            var self = this;
+            var earLabels = { left: "Left Ear", right: "Right Ear" };
 
-            var resTitleEl = document.getElementById("result-title");
-            var resDescEl = document.getElementById("result-desc");
-            var resTestsEl = document.getElementById("result-tests-container");
+            ["left", "right"].forEach(function (ear) {
+                var block = document.createElement("div");
+                block.className = "hc-ear-result-block";
 
-            if (resTitleEl) resTitleEl.innerText = result.title;
-            if (resDescEl) {
-                resDescEl.innerHTML = result.desc + (result.redFlag ? "<br><span class='red-flag-warning'>Please seek immediate medical attention if these central symptoms are new or sudden.</span>" : "");
-            }
+                var title = document.createElement("div");
+                title.className = "hc-ear-result-title";
+                title.innerText = earLabels[ear];
+                block.appendChild(title);
 
-            if (resTestsEl) {
-                resTestsEl.innerHTML = "";
-                result.tests.forEach(function (testId) {
-                    var testObj = testsData[testId];
-                    if (testObj) {
-                        var card = document.createElement("div");
-                        card.className = "assessment-test-card";
-                        card.innerHTML =
-                            '<i class="fas ' + testObj.icon + '"></i>' +
-                            '<div>' +
-                            '<h5>' + testObj.title + '</h5>' +
-                            '<p>' + testObj.desc + '</p>' +
-                            '</div>';
-                        resTestsEl.appendChild(card);
-                    }
+                FREQUENCIES.forEach(function (freq) {
+                    var tag = self.results[ear][freq] || "none";
+                    var statusText = {
+                        soft: "Heard at soft volume",
+                        medium: "Heard at medium volume",
+                        loud: "Heard only at loud volume",
+                        none: "Not heard"
+                    }[tag];
+
+                    var row = document.createElement("div");
+                    row.className = "hc-bar-row";
+
+                    var freqLabel = document.createElement("div");
+                    freqLabel.className = "hc-bar-freq";
+                    freqLabel.innerText = freq + " Hz";
+
+                    var track = document.createElement("div");
+                    track.className = "hc-bar-track";
+
+                    var fill = document.createElement("div");
+                    fill.className = "hc-bar-fill level-" + tag;
+                    track.appendChild(fill);
+
+                    var status = document.createElement("div");
+                    status.className = "hc-bar-status";
+                    status.innerText = statusText;
+
+                    row.appendChild(freqLabel);
+                    row.appendChild(track);
+                    row.appendChild(status);
+                    block.appendChild(row);
                 });
-            }
+
+                barsContainer.appendChild(block);
+            });
         },
 
+        lastVerdict: null,
+
         shareResult: function () {
-            var result = this.lastResult;
-            if (!result) return;
+            var verdict = this.lastVerdict;
+            if (!verdict) return;
 
-            var testsData_ = testsData;
-            var testNames = result.tests.map(function (id) {
-                return testsData_[id] ? testsData_[id].title : id;
-            }).join(", ");
+            var self = this;
+            var earLabels = { left: "Left Ear", right: "Right Ear" };
+            var lines = [];
+            lines.push("*Online Hearing Self-Screening Result*");
+            lines.push("Dr. Vaishali Sangole's ENT & Vertigo Clinic");
+            lines.push("");
+            lines.push("*Verdict:* " + verdict.verdict);
+            lines.push("");
 
-            var message = "*Vertigo Self-Assessment Result*\n";
-            message += "Dr. Vaishali Sangole's ENT & Vertigo Clinic\n\n";
-            message += "*Result:* " + result.title + "\n\n";
-            message += result.desc + "\n\n";
-            message += "*Recommended Tests:* " + testNames + "\n\n";
-            message += "I would like to book a consultation based on this self-assessment.";
+            ["left", "right"].forEach(function (ear) {
+                lines.push("*" + earLabels[ear] + ":*");
+                FREQUENCIES.forEach(function (freq) {
+                    var tag = self.results[ear][freq] || "none";
+                    var statusText = {
+                        soft: "heard at soft volume",
+                        medium: "heard at medium volume",
+                        loud: "heard only at loud volume",
+                        none: "not heard"
+                    }[tag];
+                    lines.push(freq + " Hz: " + statusText);
+                });
+                lines.push("");
+            });
 
+            lines.push("Note: This is an uncalibrated screening, not a clinical dB HL measurement.");
+            lines.push("I would like to book a Pure Tone Audiometry test (Rs. 500) based on this screening.");
+
+            var message = lines.join("\n");
             var encoded = encodeURIComponent(message);
             var whatsappUrl = "https://wa.me/919967752407?text=" + encoded;
             window.open(whatsappUrl, "_blank");
         },
 
-        resetQuiz: function () {
-            this.currentStep = 0;
-            this.answers = {};
-            this.lastResult = null;
+        restart: function () {
+            this.currentIndex = 0;
+            this.results = { left: {}, right: {} };
+            this.lastVerdict = null;
+            this.toneReady = false;
 
-            var quizWizard = document.getElementById("quiz-wizard-pane");
-            var quizResult = document.getElementById("quiz-result-pane");
+            var startBtn = document.getElementById("hc-start-test-btn");
+            if (startBtn) startBtn.disabled = true;
 
-            if (quizWizard) quizWizard.style.display = "block";
-            if (quizResult) quizResult.classList.remove("active");
-
-            this.renderQuestion();
+            this.showPane("hc-intro-pane");
         }
     };
 
     document.addEventListener("DOMContentLoaded", function () {
-        assessment.init();
+        screening.init();
     });
 })();
 </script>

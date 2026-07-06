@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is my voice hoarse even though my throat does not hurt?", "acceptedAnswer": {"@type": "Answer", "text": "Hoarseness without pain can come from vocal overuse (singer's nodules), acid reflux irritating the larynx, thyroid problems, vocal cord palsy or, less commonly, growths on the vocal cords. Because painless causes range from harmless to serious, persistent hoarseness should be examined with a laryngoscopy rather than assumed to be simple strain."}}, {"@type": "Question", "name": "How long should hoarseness last before I see a doctor?", "acceptedAnswer": {"@type": "Answer", "text": "As a rule, hoarseness persisting beyond two weeks, especially in smokers or with no improvement despite voice rest, deserves an ENT examination of the vocal cords. Early laryngoscopy allows small, easily treatable problems to be caught before they progress."}}, {"@type": "Question", "name": "Can acid reflux change my voice?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. In reflux oesophagitis, stomach acid rising up to the throat irritates the larynx, causing chronic hoarseness, throat clearing and a foreign-body sensation, often worse in the morning. Treatment combines anti-reflux medication with dietary and lifestyle changes, alongside vocal hygiene."}}, {"@type": "Question", "name": "What tests are done to find the cause of hoarseness?", "acceptedAnswer": {"@type": "Answer", "text": "The larynx is examined by indirect laryngoscopy in the OPD, and fiber-optic laryngoscopy gives a close, detailed view of the vocal cords. Depending on findings, blood tests, thyroid function tests, a CT scan or voice analysis by a voice therapist may be added. This step-wise work-up identifies the cause in most patients."}}, {"@type": "Question", "name": "What are singer's nodules and how are they treated?", "acceptedAnswer": {"@type": "Answer", "text": "Singer's nodules are small callus-like swellings on the vocal cords caused by chronic voice strain, common in teachers, singers and vendors. Early nodules often resolve with voice rest, vocal hygiene and voice therapy; well-established nodules that do not improve may need microlaryngoscopic surgery. A laryngoscopy at the clinic confirms the diagnosis before treatment."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -914,6 +922,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why is my voice hoarse even though my throat does not hurt?</summary>
+                    <p>Hoarseness without pain can come from vocal overuse (singer's nodules), acid reflux irritating the larynx, thyroid problems, vocal cord palsy or, less commonly, growths on the vocal cords. Because painless causes range from harmless to serious, persistent hoarseness should be examined with a laryngoscopy rather than assumed to be simple strain.</p>
+                </details>
+                <details>
+                    <summary>How long should hoarseness last before I see a doctor?</summary>
+                    <p>As a rule, hoarseness persisting beyond two weeks, especially in smokers or with no improvement despite voice rest, deserves an ENT examination of the vocal cords. Early laryngoscopy allows small, easily treatable problems to be caught before they progress.</p>
+                </details>
+                <details>
+                    <summary>Can acid reflux change my voice?</summary>
+                    <p>Yes. In reflux oesophagitis, stomach acid rising up to the throat irritates the larynx, causing chronic hoarseness, throat clearing and a foreign-body sensation, often worse in the morning. Treatment combines anti-reflux medication with dietary and lifestyle changes, alongside vocal hygiene.</p>
+                </details>
+                <details>
+                    <summary>What tests are done to find the cause of hoarseness?</summary>
+                    <p>The larynx is examined by indirect laryngoscopy in the OPD, and fiber-optic laryngoscopy gives a close, detailed view of the vocal cords. Depending on findings, blood tests, thyroid function tests, a CT scan or voice analysis by a voice therapist may be added. This step-wise work-up identifies the cause in most patients.</p>
+                </details>
+                <details>
+                    <summary>What are singer's nodules and how are they treated?</summary>
+                    <p>Singer's nodules are small callus-like swellings on the vocal cords caused by chronic voice strain, common in teachers, singers and vendors. Early nodules often resolve with voice rest, vocal hygiene and voice therapy; well-established nodules that do not improve may need microlaryngoscopic surgery. A laryngoscopy at the clinic confirms the diagnosis before treatment.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -975,8 +1029,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

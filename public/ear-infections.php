@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do children get ear infections more often than adults?", "acceptedAnswer": {"@type": "Answer", "text": "Children have shorter and narrower Eustachian tubes, so fluid drains less easily from the middle ear and infections take hold more readily. Bottle-feeding, pacifier use, exposure to cigarette smoke and recent colds further increase the risk. Most childhood ear infections are treatable, but recurrent episodes need ENT attention."}}, {"@type": "Question", "name": "Can an ear infection cause hearing loss?", "acceptedAnswer": {"@type": "Answer", "text": "Fluid and inflammation in the middle ear commonly cause temporary hearing loss during an infection. Chronic or repeatedly recurring infections, however, can permanently damage the middle and inner ear. Audiometry and impedance testing (Rs.500 each at the clinic) can measure any hearing effect and check for persistent fluid behind the eardrum."}}, {"@type": "Question", "name": "When should I take my child to a doctor for ear pain?", "acceptedAnswer": {"@type": "Answer", "text": "See a doctor promptly if your child is younger than six months with any ear infection symptoms, has fever above 102 degrees F, severe pain, pus-like discharge from the ear, or symptoms lasting more than a day or two. Early assessment prevents complications and needless suffering."}}, {"@type": "Question", "name": "Do all ear infections need antibiotics?", "acceptedAnswer": {"@type": "Answer", "text": "No. Many mild ear infections, especially viral ones, settle on their own with pain relief and observation. Antibiotics are reserved for cases where a bacterial infection is likely or symptoms are severe or persistent. This judgement is best made after an ear examination rather than starting antibiotics on your own."}}, {"@type": "Question", "name": "What happens if ear infections keep coming back?", "acceptedAnswer": {"@type": "Answer", "text": "Chronic or recurrent infections deserve a structured work-up, including an ear examination, hearing tests, and sometimes imaging, to look for persistent fluid, eardrum perforation or other causes. Depending on the findings, treatment may range from a longer medical course to minor surgical procedures. Dr. Vaishali Sangole's clinic in Kharghar offers full diagnostic hearing testing to guide these decisions."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -916,6 +924,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why do children get ear infections more often than adults?</summary>
+                    <p>Children have shorter and narrower Eustachian tubes, so fluid drains less easily from the middle ear and infections take hold more readily. Bottle-feeding, pacifier use, exposure to cigarette smoke and recent colds further increase the risk. Most childhood ear infections are treatable, but recurrent episodes need ENT attention.</p>
+                </details>
+                <details>
+                    <summary>Can an ear infection cause hearing loss?</summary>
+                    <p>Fluid and inflammation in the middle ear commonly cause temporary hearing loss during an infection. Chronic or repeatedly recurring infections, however, can permanently damage the middle and inner ear. Audiometry and impedance testing (Rs.500 each at the clinic) can measure any hearing effect and check for persistent fluid behind the eardrum.</p>
+                </details>
+                <details>
+                    <summary>When should I take my child to a doctor for ear pain?</summary>
+                    <p>See a doctor promptly if your child is younger than six months with any ear infection symptoms, has fever above 102 degrees F, severe pain, pus-like discharge from the ear, or symptoms lasting more than a day or two. Early assessment prevents complications and needless suffering.</p>
+                </details>
+                <details>
+                    <summary>Do all ear infections need antibiotics?</summary>
+                    <p>No. Many mild ear infections, especially viral ones, settle on their own with pain relief and observation. Antibiotics are reserved for cases where a bacterial infection is likely or symptoms are severe or persistent. This judgement is best made after an ear examination rather than starting antibiotics on your own.</p>
+                </details>
+                <details>
+                    <summary>What happens if ear infections keep coming back?</summary>
+                    <p>Chronic or recurrent infections deserve a structured work-up, including an ear examination, hearing tests, and sometimes imaging, to look for persistent fluid, eardrum perforation or other causes. Depending on the findings, treatment may range from a longer medical course to minor surgical procedures. Dr. Vaishali Sangole's clinic in Kharghar offers full diagnostic hearing testing to guide these decisions.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -977,8 +1031,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

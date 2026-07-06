@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the main types of hearing loss?", "acceptedAnswer": {"@type": "Answer", "text": "There are three types: conductive hearing loss, where sound cannot pass properly through the outer or middle ear; sensorineural hearing loss, caused by damage to the inner ear or hearing nerve; and mixed hearing loss, a combination of both. Identifying the type is essential because each is treated differently."}}, {"@type": "Question", "name": "Can hearing loss be reversed?", "acceptedAnswer": {"@type": "Answer", "text": "Conductive hearing loss from causes like ear wax, fluid or infection is often reversible with medical treatment or surgery. Sensorineural hearing loss is usually permanent, but hearing aids and, in selected cases, cochlear implants can restore useful hearing. An early assessment gives the widest range of options."}}, {"@type": "Question", "name": "Which test tells me how much hearing I have lost?", "acceptedAnswer": {"@type": "Answer", "text": "Pure tone audiometry is the standard test that maps your hearing across different frequencies (Rs.500 at the clinic). Impedance audiometry (Rs.500) checks the eardrum and middle ear function. Together they identify both the degree and the type of hearing loss, forming the basis of any treatment plan."}}, {"@type": "Question", "name": "How is hearing tested in babies and small children?", "acceptedAnswer": {"@type": "Answer", "text": "Infants cannot respond to conventional tests, so objective tests are used: OAE (Rs.1000) screens the inner ear's hair cells, while BERA (Rs.3000) and ASSR (Rs.3000) record the hearing nerve and brainstem responses during natural sleep. These tests are painless and are available at the clinic in Kharghar; early detection greatly improves speech development outcomes."}}, {"@type": "Question", "name": "Is sudden hearing loss an emergency?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Sudden hearing loss in one ear, developing over hours to a couple of days, should be treated as an ENT emergency because early treatment (often steroids) offers the best chance of recovery. If this happens, see an ENT specialist promptly; the clinic can be contacted at +91 9967752407."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -1390,6 +1398,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What are the main types of hearing loss?</summary>
+                    <p>There are three types: conductive hearing loss, where sound cannot pass properly through the outer or middle ear; sensorineural hearing loss, caused by damage to the inner ear or hearing nerve; and mixed hearing loss, a combination of both. Identifying the type is essential because each is treated differently.</p>
+                </details>
+                <details>
+                    <summary>Can hearing loss be reversed?</summary>
+                    <p>Conductive hearing loss from causes like ear wax, fluid or infection is often reversible with medical treatment or surgery. Sensorineural hearing loss is usually permanent, but hearing aids and, in selected cases, cochlear implants can restore useful hearing. An early assessment gives the widest range of options.</p>
+                </details>
+                <details>
+                    <summary>Which test tells me how much hearing I have lost?</summary>
+                    <p>Pure tone audiometry is the standard test that maps your hearing across different frequencies (Rs.500 at the clinic). Impedance audiometry (Rs.500) checks the eardrum and middle ear function. Together they identify both the degree and the type of hearing loss, forming the basis of any treatment plan.</p>
+                </details>
+                <details>
+                    <summary>How is hearing tested in babies and small children?</summary>
+                    <p>Infants cannot respond to conventional tests, so objective tests are used: OAE (Rs.1000) screens the inner ear's hair cells, while BERA (Rs.3000) and ASSR (Rs.3000) record the hearing nerve and brainstem responses during natural sleep. These tests are painless and are available at the clinic in Kharghar; early detection greatly improves speech development outcomes.</p>
+                </details>
+                <details>
+                    <summary>Is sudden hearing loss an emergency?</summary>
+                    <p>Yes. Sudden hearing loss in one ear, developing over hours to a couple of days, should be treated as an ENT emergency because early treatment (often steroids) offers the best chance of recovery. If this happens, see an ENT specialist promptly; the clinic can be contacted at +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -1451,8 +1505,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I know if I have sinusitis or just a common cold?", "acceptedAnswer": {"@type": "Answer", "text": "A cold usually improves within 7 to 10 days. Suspect sinusitis when nasal blockage, thick discharge, facial pressure or headache persist beyond that, or when symptoms improve and then worsen again. Recurring or long-standing symptoms suggest chronic sinusitis and warrant an ENT evaluation."}}, {"@type": "Question", "name": "Why does my sinusitis keep coming back?", "acceptedAnswer": {"@type": "Answer", "text": "Chronic maxillary sinusitis is usually the result of improperly treated recurrent acute sinusitis. Anything blocking sinus drainage, such as a deviated nasal septum, enlarged turbinates, nasal polyps, adenoid enlargement or uncontrolled allergy, keeps the cycle going. Treating the underlying blockage, not just each infection, is what breaks the pattern."}}, {"@type": "Question", "name": "What tests confirm chronic sinusitis?", "acceptedAnswer": {"@type": "Answer", "text": "After clinical examination, a CT scan of the paranasal sinuses is the investigation of choice; it shows exactly which sinuses are involved and how extensively. Nasal endoscopy in the clinic also helps visualise polyps, discharge and anatomical blockages before deciding on treatment."}}, {"@type": "Question", "name": "Can sinusitis be treated without surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, most cases are managed medically first with antibiotics, antihistamines, steroid nasal sprays and decongestants. Surgery is considered when well-conducted medical treatment fails or when there is a structural problem such as polyps or a deviated septum. A consultation helps decide which path fits your case."}}, {"@type": "Question", "name": "What is FESS and when is it needed?", "acceptedAnswer": {"@type": "Answer", "text": "Functional Endoscopic Sinus Surgery (FESS) is a minimally invasive procedure done through the nostrils, with no external cuts, to reopen the natural drainage pathways of the sinuses and remove polyps. It is recommended for chronic sinusitis or polyps that have not responded to medical treatment, and modern techniques have considerably reduced recurrence rates."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -828,6 +836,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>How do I know if I have sinusitis or just a common cold?</summary>
+                    <p>A cold usually improves within 7 to 10 days. Suspect sinusitis when nasal blockage, thick discharge, facial pressure or headache persist beyond that, or when symptoms improve and then worsen again. Recurring or long-standing symptoms suggest chronic sinusitis and warrant an ENT evaluation.</p>
+                </details>
+                <details>
+                    <summary>Why does my sinusitis keep coming back?</summary>
+                    <p>Chronic maxillary sinusitis is usually the result of improperly treated recurrent acute sinusitis. Anything blocking sinus drainage, such as a deviated nasal septum, enlarged turbinates, nasal polyps, adenoid enlargement or uncontrolled allergy, keeps the cycle going. Treating the underlying blockage, not just each infection, is what breaks the pattern.</p>
+                </details>
+                <details>
+                    <summary>What tests confirm chronic sinusitis?</summary>
+                    <p>After clinical examination, a CT scan of the paranasal sinuses is the investigation of choice; it shows exactly which sinuses are involved and how extensively. Nasal endoscopy in the clinic also helps visualise polyps, discharge and anatomical blockages before deciding on treatment.</p>
+                </details>
+                <details>
+                    <summary>Can sinusitis be treated without surgery?</summary>
+                    <p>Yes, most cases are managed medically first with antibiotics, antihistamines, steroid nasal sprays and decongestants. Surgery is considered when well-conducted medical treatment fails or when there is a structural problem such as polyps or a deviated septum. A consultation helps decide which path fits your case.</p>
+                </details>
+                <details>
+                    <summary>What is FESS and when is it needed?</summary>
+                    <p>Functional Endoscopic Sinus Surgery (FESS) is a minimally invasive procedure done through the nostrils, with no external cuts, to reopen the natural drainage pathways of the sinuses and remove polyps. It is recommended for chronic sinusitis or polyps that have not responded to medical treatment, and modern techniques have considerably reduced recurrence rates.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -889,8 +943,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

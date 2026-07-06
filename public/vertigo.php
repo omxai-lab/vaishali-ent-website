@@ -124,6 +124,7 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do I feel dizzy when I lie down or turn over in bed?", "acceptedAnswer": {"@type": "Answer", "text": "Brief spinning triggered by lying down, turning in bed or looking up is most often caused by Benign Paroxysmal Positional Vertigo (BPPV), where tiny calcium crystals in the inner ear shift out of place. It is one of the most common and most treatable causes of vertigo. A proper positional examination, and if needed a Videonystagmography (VNG) test, helps confirm the diagnosis, so it is best to get evaluated rather than self-diagnose."}}, {"@type": "Question", "name": "Is vertigo a disease in itself?", "acceptedAnswer": {"@type": "Answer", "text": "No. Vertigo is a symptom, much like fever, and it can have several different underlying causes. Most cases arise from inner ear disorders, which are disabling but usually not life-threatening. A consultation with an ENT specialist or otoneurologist helps identify the exact cause before starting treatment."}}, {"@type": "Question", "name": "What is a VNG test and why is it done for vertigo?", "acceptedAnswer": {"@type": "Answer", "text": "Videonystagmography (VNG) records your eye movements through different test protocols to assess how well the inner ear balance system is working. It helps pinpoint whether the problem lies in the inner ear or elsewhere, guiding the right treatment. Dr. Vaishali Sangole's clinic in Kharghar runs a dedicated vertigo clinic with VNG, the first of its kind in Navi Mumbai."}}, {"@type": "Question", "name": "Can vertigo be cured completely?", "acceptedAnswer": {"@type": "Answer", "text": "That depends on the cause. BPPV often resolves with simple repositioning manoeuvres performed in the clinic, while conditions like Meniere's disease or vestibular migraine are controlled with medication, diet and balance exercises. An accurate diagnosis is the key step, which is why a structured evaluation is recommended before any long-term treatment."}}, {"@type": "Question", "name": "When is dizziness or vertigo a sign of something serious?", "acceptedAnswer": {"@type": "Answer", "text": "Seek urgent medical attention if vertigo comes with severe headache, double or blurred vision, slurred speech, weakness of the face or limbs, fainting, or repeated falls. These may point to a neurological cause rather than the inner ear. For recurrent vertigo without such symptoms, a planned ENT consultation is appropriate; the clinic can be reached at +91 9967752407."}}]}</script>
 </head>
 
 <body>
@@ -421,8 +422,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -754,6 +762,52 @@
 
 </section>
 
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why do I feel dizzy when I lie down or turn over in bed?</summary>
+                    <p>Brief spinning triggered by lying down, turning in bed or looking up is most often caused by Benign Paroxysmal Positional Vertigo (BPPV), where tiny calcium crystals in the inner ear shift out of place. It is one of the most common and most treatable causes of vertigo. A proper positional examination, and if needed a Videonystagmography (VNG) test, helps confirm the diagnosis, so it is best to get evaluated rather than self-diagnose.</p>
+                </details>
+                <details>
+                    <summary>Is vertigo a disease in itself?</summary>
+                    <p>No. Vertigo is a symptom, much like fever, and it can have several different underlying causes. Most cases arise from inner ear disorders, which are disabling but usually not life-threatening. A consultation with an ENT specialist or otoneurologist helps identify the exact cause before starting treatment.</p>
+                </details>
+                <details>
+                    <summary>What is a VNG test and why is it done for vertigo?</summary>
+                    <p>Videonystagmography (VNG) records your eye movements through different test protocols to assess how well the inner ear balance system is working. It helps pinpoint whether the problem lies in the inner ear or elsewhere, guiding the right treatment. Dr. Vaishali Sangole's clinic in Kharghar runs a dedicated vertigo clinic with VNG, the first of its kind in Navi Mumbai.</p>
+                </details>
+                <details>
+                    <summary>Can vertigo be cured completely?</summary>
+                    <p>That depends on the cause. BPPV often resolves with simple repositioning manoeuvres performed in the clinic, while conditions like Meniere's disease or vestibular migraine are controlled with medication, diet and balance exercises. An accurate diagnosis is the key step, which is why a structured evaluation is recommended before any long-term treatment.</p>
+                </details>
+                <details>
+                    <summary>When is dizziness or vertigo a sign of something serious?</summary>
+                    <p>Seek urgent medical attention if vertigo comes with severe headache, double or blurred vision, slurred speech, weakness of the face or limbs, fainting, or repeated falls. These may point to a neurological cause rather than the inner ear. For recurrent vertigo without such symptoms, a planned ENT consultation is appropriate; the clinic can be reached at +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
+
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 
     <i class="fa-brands fa-whatsapp"></i>
@@ -815,8 +869,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 

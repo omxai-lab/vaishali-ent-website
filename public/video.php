@@ -421,8 +421,15 @@
                                                         </li>
 
                                                         <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                                        <li class="dropdown"><a href="patient-tools.php">Patient Tools</a>
+                                                            <ul>
+                                                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                                                <li><a href="patient-tools.php">Tinnitus Masker &amp; Test Prep</a></li>
+                                                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
+                                                            </ul>
+                                                        </li>
 
 														 <li class="dropdown"><a href="gallery.php">Gallery</a>
 
@@ -619,27 +626,27 @@
         <div class="container">
             <div class="row g-3">
                 <div class="col-md-4">
-                    <video width="100%" height="500" controls>
+                    <video width="100%" height="500" controls preload="metadata">
 					  <source src="images/gallery/v1.mp4" type="video/mp4">
 					</video>
                 </div>
 				 <div class="col-md-4">
-                    <video width="100%" height="500" controls>
+                    <video width="100%" height="500" controls preload="metadata">
 					  <source src="images/gallery/v2.mp4" type="video/mp4">
 					</video>
                 </div>
 				 <div class="col-md-4">
-                    <video width="100%" height="500" controls>
+                    <video width="100%" height="500" controls preload="metadata">
 					  <source src="images/gallery/v3.mp4" type="video/mp4">
 					</video>
                 </div>
 				 <div class="col-md-4">
-                    <video width="100%" height="500" controls>
+                    <video width="100%" height="500" controls preload="metadata">
 					  <source src="images/gallery/v4.mp4" type="video/mp4">
 					</video>
                 </div>
 				 <div class="col-md-4">
-                    <video width="100%" height="500" controls>
+                    <video width="100%" height="500" controls preload="metadata">
 					  <source src="images/gallery/v5.mp4" type="video/mp4">
 					</video>
                 </div>
@@ -711,8 +718,11 @@
                                 <li><a href="vertigo.php">Vertigo Treatments</a></li>
 
                                 <li><a href="test.php">Test</a></li>
-                                                        <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
-                                                        <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-quiz.php">Vertigo Quiz</a></li>
+                                <li><a href="patient-tools.php">Patient Tools</a></li>
+                                <li><a href="vertigo-exercises.php">Vertigo Exercises</a></li>
+                                <li><a href="hearing-check.php">Hearing Check</a></li>
+                                <li><a href="vertigo-diary.php">Vertigo Diary</a></li>
 
                                 <li><a href="gallery.php">Gallery</a></li>
 
