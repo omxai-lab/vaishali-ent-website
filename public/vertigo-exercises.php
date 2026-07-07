@@ -357,6 +357,18 @@
         }
         .quick-nav-row a:hover { color: #fff; background: var(--pbmit-global-color); }
     </style>
+
+    <style media="print">
+        header.site-header, .pbmit-title-bar-wrapper, footer, .whatsapp-button, .call-button,
+        .pbmit-footer-widget-area, [class*=float], .exercise-share-btn, button, .site-header-menu,
+        .pre-header, nav, .faq-section { display: none !important; }
+        body { background: #fff !important; color: #000 !important; font-size: 12pt; }
+        a { color: #000 !important; text-decoration: none !important; }
+        img { max-width: 300px !important; }
+        section, .container { padding: 0 !important; margin: 0 0 12pt 0 !important; }
+        h2, h3 { page-break-after: avoid; }
+        .exercise-card, [id=epley], [id=brandt-daroff], [id=cawthorne-cooksey] { page-break-inside: avoid; }
+    </style>
 </head>
 
 <body>
@@ -572,6 +584,10 @@
         var subject = document.getElementById("subject").value;
         var message = document.getElementById("message").value;
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
         +"Name of Patient : " + name +"%0a"

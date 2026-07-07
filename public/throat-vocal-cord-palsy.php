@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is vocal cord palsy?", "acceptedAnswer": {"@type": "Answer", "text": "The voice box has two vocal cords that meet and vibrate to produce voice; when one stops moving because its nerve supply is affected, it is called vocal cord palsy. The usual result is a rough, husky or breathy voice, and sometimes coughing while drinking liquids. It is a sign that the nerve pathway needs evaluation, not a disease of the voice alone."}}, {"@type": "Question", "name": "What causes a vocal cord to become paralysed?", "acceptedAnswer": {"@type": "Answer", "text": "About 90 percent of cases are due to problems along the peripheral course of the laryngeal nerves, which run from the brainstem down into the chest. Causes include viral neuritis, thyroid disease or thyroid surgery, neck trauma, and tumours of the thyroid, chest or skull base; central brain causes are rare. In some patients no definite cause is found even after full evaluation."}}, {"@type": "Question", "name": "Can a paralysed vocal cord recover?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, recovery is possible, particularly when the cause is viral inflammation or a stretched rather than cut nerve, and it may take several months. During this time voice therapy helps the healthy cord compensate. If recovery does not occur, surgical procedures can reposition the paralysed cord to improve voice and prevent aspiration."}}, {"@type": "Question", "name": "What tests are needed for vocal cord palsy?", "acceptedAnswer": {"@type": "Answer", "text": "The cords are examined directly by laryngoscopy to confirm which side is affected. Because the nerve travels from the skull base through the neck into the chest, imaging of this entire pathway, along with thyroid assessment and relevant blood tests, is done to find the cause. Treatment depends on what these tests reveal."}}, {"@type": "Question", "name": "When should hoarseness of voice be checked by a doctor?", "acceptedAnswer": {"@type": "Answer", "text": "Any hoarseness lasting more than two to three weeks should be examined, especially in smokers, and sooner if there is breathing difficulty, choking on liquids, or a neck swelling. Persistent voice change is never normal and is easy to assess with laryngoscopy. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Vocal Cord Palsy Treatment", "item": "https://entvaishalisangole.com/throat-vocal-cord-palsy.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -824,6 +830,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What is vocal cord palsy?</summary>
+                    <p>The voice box has two vocal cords that meet and vibrate to produce voice; when one stops moving because its nerve supply is affected, it is called vocal cord palsy. The usual result is a rough, husky or breathy voice, and sometimes coughing while drinking liquids. It is a sign that the nerve pathway needs evaluation, not a disease of the voice alone.</p>
+                </details>
+                <details>
+                    <summary>What causes a vocal cord to become paralysed?</summary>
+                    <p>About 90 percent of cases are due to problems along the peripheral course of the laryngeal nerves, which run from the brainstem down into the chest. Causes include viral neuritis, thyroid disease or thyroid surgery, neck trauma, and tumours of the thyroid, chest or skull base; central brain causes are rare. In some patients no definite cause is found even after full evaluation.</p>
+                </details>
+                <details>
+                    <summary>Can a paralysed vocal cord recover?</summary>
+                    <p>Yes, recovery is possible, particularly when the cause is viral inflammation or a stretched rather than cut nerve, and it may take several months. During this time voice therapy helps the healthy cord compensate. If recovery does not occur, surgical procedures can reposition the paralysed cord to improve voice and prevent aspiration.</p>
+                </details>
+                <details>
+                    <summary>What tests are needed for vocal cord palsy?</summary>
+                    <p>The cords are examined directly by laryngoscopy to confirm which side is affected. Because the nerve travels from the skull base through the neck into the chest, imaging of this entire pathway, along with thyroid assessment and relevant blood tests, is done to find the cause. Treatment depends on what these tests reveal.</p>
+                </details>
+                <details>
+                    <summary>When should hoarseness of voice be checked by a doctor?</summary>
+                    <p>Any hoarseness lasting more than two to three weeks should be examined, especially in smokers, and sooner if there is breathing difficulty, choking on liquids, or a neck swelling. Persistent voice change is never normal and is easy to assess with laryngoscopy. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I know if my eardrum has ruptured?", "acceptedAnswer": {"@type": "Answer", "text": "A typical story is sudden ear pain that then eases, followed by watery, bloody or pus-like discharge from the ear. There may be reduced hearing, ringing in the ear (tinnitus) and occasionally dizziness. Only an ear examination by a doctor can confirm a perforation, so get it checked rather than guessing."}}, {"@type": "Question", "name": "Can a ruptured eardrum heal on its own?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, many small perforations heal by themselves within a few weeks provided the ear is kept dry and free of infection. Larger or long-standing perforations may not close and can be repaired surgically with a procedure called tympanoplasty. Regular review helps confirm the drum is healing as expected."}}, {"@type": "Question", "name": "What causes an eardrum to rupture?", "acceptedAnswer": {"@type": "Answer", "text": "Middle ear infections are the commonest cause, especially in children, as fluid pressure builds behind the drum. Other causes include sudden pressure changes while flying or diving, injury from cotton buds or slaps to the ear, and very loud blasts of noise."}}, {"@type": "Question", "name": "Will my hearing come back after an eardrum rupture?", "acceptedAnswer": {"@type": "Answer", "text": "Hearing loss from a simple perforation is usually partial and often improves once the drum heals or is repaired. Audiometry (Rs.500) and impedance testing (Rs.500) at Dr. Vaishali Sangole's clinic in Kharghar measure exactly how much hearing is affected and track recovery. Persistent loss after healing needs further evaluation."}}, {"@type": "Question", "name": "What precautions should I take with a perforated eardrum?", "acceptedAnswer": {"@type": "Answer", "text": "Keep water strictly out of the ear while bathing and avoid swimming until the doctor confirms the drum has healed. Do not blow your nose forcefully, avoid inserting anything into the ear and use only drops that have been prescribed for you. See a doctor promptly if pain, fever or discharge increases."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Ear Treatments", "item": "https://entvaishalisangole.com/ear-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Ear Drum Rupture Treatment", "item": "https://entvaishalisangole.com/ear-drum-rupture.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -780,6 +786,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>How do I know if my eardrum has ruptured?</summary>
+                    <p>A typical story is sudden ear pain that then eases, followed by watery, bloody or pus-like discharge from the ear. There may be reduced hearing, ringing in the ear (tinnitus) and occasionally dizziness. Only an ear examination by a doctor can confirm a perforation, so get it checked rather than guessing.</p>
+                </details>
+                <details>
+                    <summary>Can a ruptured eardrum heal on its own?</summary>
+                    <p>Yes, many small perforations heal by themselves within a few weeks provided the ear is kept dry and free of infection. Larger or long-standing perforations may not close and can be repaired surgically with a procedure called tympanoplasty. Regular review helps confirm the drum is healing as expected.</p>
+                </details>
+                <details>
+                    <summary>What causes an eardrum to rupture?</summary>
+                    <p>Middle ear infections are the commonest cause, especially in children, as fluid pressure builds behind the drum. Other causes include sudden pressure changes while flying or diving, injury from cotton buds or slaps to the ear, and very loud blasts of noise.</p>
+                </details>
+                <details>
+                    <summary>Will my hearing come back after an eardrum rupture?</summary>
+                    <p>Hearing loss from a simple perforation is usually partial and often improves once the drum heals or is repaired. Audiometry (Rs.500) and impedance testing (Rs.500) at Dr. Vaishali Sangole's clinic in Kharghar measure exactly how much hearing is affected and track recovery. Persistent loss after healing needs further evaluation.</p>
+                </details>
+                <details>
+                    <summary>What precautions should I take with a perforated eardrum?</summary>
+                    <p>Keep water strictly out of the ear while bathing and avoid swimming until the doctor confirms the drum has healed. Do not blow your nose forcefully, avoid inserting anything into the ear and use only drops that have been prescribed for you. See a doctor promptly if pain, fever or discharge increases.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

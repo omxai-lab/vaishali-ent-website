@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are ethmoidal polyps and are they cancerous?", "acceptedAnswer": {"@type": "Answer", "text": "Ethmoidal polyps are multiple, painless, pearly white grape-like swellings arising from the ethmoid sinuses, usually on both sides of the nose. They are benign and strongly linked to nasal allergy, not cancer. Any polyp that is one-sided, bleeds or looks unusual, however, deserves careful evaluation."}}, {"@type": "Question", "name": "Why have I lost my sense of smell with nasal polyps?", "acceptedAnswer": {"@type": "Answer", "text": "Polyps physically block the airflow to the smell receptors high in the nose, causing anosmia, a reduced or lost sense of smell. Blockage of both nostrils, watery discharge, sneezing and a nasal tone of voice commonly accompany it. Smell often improves after the polyps are treated, though recovery is not guaranteed."}}, {"@type": "Question", "name": "Can nasal polyps be treated with medicines alone?", "acceptedAnswer": {"@type": "Answer", "text": "Antihistamines, steroid nasal sprays and short courses of low-dose steroids can shrink polyps to some extent, especially early ones. Well-formed polyps, however, rarely disappear with medicines alone and usually need surgery combined with continued medical treatment. An ENT assessment will show which stage your polyps are at."}}, {"@type": "Question", "name": "What surgery is done for ethmoidal polyps?", "acceptedAnswer": {"@type": "Answer", "text": "Functional Endoscopic Sinus Surgery (FESS) with a microdebrider is the standard operation; it removes the polyps and opens the ethmoid air cells through the nostrils without any external cut. A CT scan of the paranasal sinuses is done beforehand to map the disease. This approach has considerably reduced recurrence compared with older techniques."}}, {"@type": "Question", "name": "Do nasal polyps come back after surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Because the underlying allergic tendency remains, polyps can recur, which is why steroid nasal sprays, allergy control and regular follow-up after surgery are important. Modern endoscopic surgery has lowered recurrence rates substantially. For evaluation, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai is available on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Nose Treatments", "item": "https://entvaishalisangole.com/nose-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Ethmoidal Polyps Treatment", "item": "https://entvaishalisangole.com/nose-ethmoidal-polyps.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -808,6 +814,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What are ethmoidal polyps and are they cancerous?</summary>
+                    <p>Ethmoidal polyps are multiple, painless, pearly white grape-like swellings arising from the ethmoid sinuses, usually on both sides of the nose. They are benign and strongly linked to nasal allergy, not cancer. Any polyp that is one-sided, bleeds or looks unusual, however, deserves careful evaluation.</p>
+                </details>
+                <details>
+                    <summary>Why have I lost my sense of smell with nasal polyps?</summary>
+                    <p>Polyps physically block the airflow to the smell receptors high in the nose, causing anosmia, a reduced or lost sense of smell. Blockage of both nostrils, watery discharge, sneezing and a nasal tone of voice commonly accompany it. Smell often improves after the polyps are treated, though recovery is not guaranteed.</p>
+                </details>
+                <details>
+                    <summary>Can nasal polyps be treated with medicines alone?</summary>
+                    <p>Antihistamines, steroid nasal sprays and short courses of low-dose steroids can shrink polyps to some extent, especially early ones. Well-formed polyps, however, rarely disappear with medicines alone and usually need surgery combined with continued medical treatment. An ENT assessment will show which stage your polyps are at.</p>
+                </details>
+                <details>
+                    <summary>What surgery is done for ethmoidal polyps?</summary>
+                    <p>Functional Endoscopic Sinus Surgery (FESS) with a microdebrider is the standard operation; it removes the polyps and opens the ethmoid air cells through the nostrils without any external cut. A CT scan of the paranasal sinuses is done beforehand to map the disease. This approach has considerably reduced recurrence compared with older techniques.</p>
+                </details>
+                <details>
+                    <summary>Do nasal polyps come back after surgery?</summary>
+                    <p>Because the underlying allergic tendency remains, polyps can recur, which is why steroid nasal sprays, allergy control and regular follow-up after surgery are important. Modern endoscopic surgery has lowered recurrence rates substantially. For evaluation, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai is available on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

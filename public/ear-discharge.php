@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is fluid coming out of my ear something to worry about?", "acceptedAnswer": {"@type": "Answer", "text": "A small amount of ear wax working its way out is normal and harmless. However, watery, bloody or pus-like discharge usually points to an ear infection or a ruptured eardrum and needs medical attention. If discharge is accompanied by pain, fever or reduced hearing, have your ear examined by an ENT specialist without delay."}}, {"@type": "Question", "name": "What are the most common causes of ear discharge?", "acceptedAnswer": {"@type": "Answer", "text": "Middle ear infections are the most frequent cause, as fluid builds up behind the eardrum and can leak out if the drum perforates. Injury to the ear canal from cotton buds, hairpins or keys, sudden pressure changes during flights or diving, and swimmer's ear are other common causes. Rarer but serious causes include mastoiditis and malignant otitis externa."}}, {"@type": "Question", "name": "Can I put ear drops at home before seeing a doctor?", "acceptedAnswer": {"@type": "Answer", "text": "It is safer not to self-medicate, because some drops can harm the middle ear if the eardrum is perforated, which you cannot judge from outside. Keep the ear dry, avoid inserting anything into the canal and get the ear examined first. Dr. Vaishali Sangole's clinic in Kharghar, Navi Mumbai can be reached at +91 9967752407 for an appointment."}}, {"@type": "Question", "name": "What tests are done for a discharging ear?", "acceptedAnswer": {"@type": "Answer", "text": "The ear is first examined with an otoscope or endoscope to see the eardrum and the source of discharge. Hearing is then assessed with audiometry (Rs.500) and the eardrum and middle ear function with impedance audiometry (Rs.500), both available at the clinic. These tests help decide whether medical treatment alone is enough or surgery is needed."}}, {"@type": "Question", "name": "How can I prevent ear discharge from coming back?", "acceptedAnswer": {"@type": "Answer", "text": "Keep foreign objects, including cotton buds, out of your ears and dry your ears gently after swimming or bathing. Treat colds and nasal allergies early, since infections often reach the ear through the nose. If discharge keeps recurring, a persistent eardrum perforation or chronic infection should be ruled out by an ENT specialist."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Ear Treatments", "item": "https://entvaishalisangole.com/ear-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Ear Discharge Treatment", "item": "https://entvaishalisangole.com/ear-discharge.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -764,6 +770,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Is fluid coming out of my ear something to worry about?</summary>
+                    <p>A small amount of ear wax working its way out is normal and harmless. However, watery, bloody or pus-like discharge usually points to an ear infection or a ruptured eardrum and needs medical attention. If discharge is accompanied by pain, fever or reduced hearing, have your ear examined by an ENT specialist without delay.</p>
+                </details>
+                <details>
+                    <summary>What are the most common causes of ear discharge?</summary>
+                    <p>Middle ear infections are the most frequent cause, as fluid builds up behind the eardrum and can leak out if the drum perforates. Injury to the ear canal from cotton buds, hairpins or keys, sudden pressure changes during flights or diving, and swimmer's ear are other common causes. Rarer but serious causes include mastoiditis and malignant otitis externa.</p>
+                </details>
+                <details>
+                    <summary>Can I put ear drops at home before seeing a doctor?</summary>
+                    <p>It is safer not to self-medicate, because some drops can harm the middle ear if the eardrum is perforated, which you cannot judge from outside. Keep the ear dry, avoid inserting anything into the canal and get the ear examined first. Dr. Vaishali Sangole's clinic in Kharghar, Navi Mumbai can be reached at +91 9967752407 for an appointment.</p>
+                </details>
+                <details>
+                    <summary>What tests are done for a discharging ear?</summary>
+                    <p>The ear is first examined with an otoscope or endoscope to see the eardrum and the source of discharge. Hearing is then assessed with audiometry (Rs.500) and the eardrum and middle ear function with impedance audiometry (Rs.500), both available at the clinic. These tests help decide whether medical treatment alone is enough or surgery is needed.</p>
+                </details>
+                <details>
+                    <summary>How can I prevent ear discharge from coming back?</summary>
+                    <p>Keep foreign objects, including cotton buds, out of your ears and dry your ears gently after swimming or bathing. Treat colds and nasal allergies early, since infections often reach the ear through the nose. If discharge keeps recurring, a persistent eardrum perforation or chronic infection should be ruled out by an ENT specialist.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

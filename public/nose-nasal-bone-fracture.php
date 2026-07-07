@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I know if my nose is broken after an injury?", "acceptedAnswer": {"@type": "Answer", "text": "Suspect a fracture if there is swelling, visible bending or flattening of the nose, bleeding, blockage or tenderness after a blow, commonly from sports, falls or road accidents. Swelling can hide the deformity for a few days. An ENT examination soon after the injury is the reliable way to confirm it."}}, {"@type": "Question", "name": "When is a nose injury an emergency?", "acceptedAnswer": {"@type": "Answer", "text": "Seek immediate care if bleeding does not stop with pressure, if a clear watery fluid keeps dripping from the nose (which can indicate a cerebrospinal fluid leak), or if there is double vision, eye swelling, severe headache or loss of consciousness. A rapidly increasing painful swelling inside the septum also needs urgent drainage. These signs point to complications beyond a simple fracture."}}, {"@type": "Question", "name": "How soon should a broken nose be treated?", "acceptedAnswer": {"@type": "Answer", "text": "Timing matters: displaced nasal bones are best repositioned within about 7 to 10 days of injury, once the initial swelling settles but before the bones begin to set. After this window closes, correction usually requires formal surgery such as septorhinoplasty. So do not delay the first assessment."}}, {"@type": "Question", "name": "What problems can an untreated nasal fracture cause?", "acceptedAnswer": {"@type": "Answer", "text": "Complications include a deviated nasal septum with long-term blockage, saddling or flattening of the nasal bridge, recurrent nosebleeds and, in severe injuries, damage to the tear duct or a cerebrospinal fluid leak. Early treatment prevents most of these. Even old fractures can be corrected surgically if they cause symptoms."}}, {"@type": "Question", "name": "What tests and treatment are done for a nasal fracture?", "acceptedAnswer": {"@type": "Answer", "text": "X-rays and, for higher-velocity injuries, a CT scan define the fracture and any involvement of surrounding structures. Simple displaced fractures are treated by closed reduction, repositioning the bones without cuts, while complex or old fractures may need septoplasty or rhinoplasty. For assessment after a nasal injury, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai is available on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Nose Treatments", "item": "https://entvaishalisangole.com/nose-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Nasal Bone Fracture Treatment", "item": "https://entvaishalisangole.com/nose-nasal-bone-fracture.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -738,6 +744,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>How do I know if my nose is broken after an injury?</summary>
+                    <p>Suspect a fracture if there is swelling, visible bending or flattening of the nose, bleeding, blockage or tenderness after a blow, commonly from sports, falls or road accidents. Swelling can hide the deformity for a few days. An ENT examination soon after the injury is the reliable way to confirm it.</p>
+                </details>
+                <details>
+                    <summary>When is a nose injury an emergency?</summary>
+                    <p>Seek immediate care if bleeding does not stop with pressure, if a clear watery fluid keeps dripping from the nose (which can indicate a cerebrospinal fluid leak), or if there is double vision, eye swelling, severe headache or loss of consciousness. A rapidly increasing painful swelling inside the septum also needs urgent drainage. These signs point to complications beyond a simple fracture.</p>
+                </details>
+                <details>
+                    <summary>How soon should a broken nose be treated?</summary>
+                    <p>Timing matters: displaced nasal bones are best repositioned within about 7 to 10 days of injury, once the initial swelling settles but before the bones begin to set. After this window closes, correction usually requires formal surgery such as septorhinoplasty. So do not delay the first assessment.</p>
+                </details>
+                <details>
+                    <summary>What problems can an untreated nasal fracture cause?</summary>
+                    <p>Complications include a deviated nasal septum with long-term blockage, saddling or flattening of the nasal bridge, recurrent nosebleeds and, in severe injuries, damage to the tear duct or a cerebrospinal fluid leak. Early treatment prevents most of these. Even old fractures can be corrected surgically if they cause symptoms.</p>
+                </details>
+                <details>
+                    <summary>What tests and treatment are done for a nasal fracture?</summary>
+                    <p>X-rays and, for higher-velocity injuries, a CT scan define the fracture and any involvement of surrounding structures. Simple displaced fractures are treated by closed reduction, repositioning the bones without cuts, while complex or old fractures may need septoplasty or rhinoplasty. For assessment after a nasal injury, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai is available on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

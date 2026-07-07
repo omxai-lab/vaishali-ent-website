@@ -1,0 +1,44 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        ]
+      },
+      {
+        "source": "**/*.php",
+        "headers": [
+          { "key": "Content-Type", "value": "text/html; charset=utf-8" },
+          { "key": "Cache-Control", "value": "public, max-age=3600" }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=604800" }
+        ]
+      },
+      {
+        "source": "**/*.mp4",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=2592000" }
+        ]
+      }
+    ],
+    "redirects": [
+      { "source": "/best-doctor-for-tinnitus-in-navimumbai.php", "destination": "/best-doctor-for-tinnitus-in-navi-mumbai.php", "type": 301 },
+      { "source": "/best-center-for-egog-vemp-test-in-mumbai.php", "destination": "/best-center-for-egog-vemp-test-in-navi-mumbai.php", "type": 301 },
+      { "source": "/best-doctor-for-vertigo-treatment-in-kharghar.php", "destination": "/vertigo.php", "type": 301 }
+    ]
+  }
+}

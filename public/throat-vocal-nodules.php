@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are vocal nodules?", "acceptedAnswer": {"@type": "Answer", "text": "Vocal nodules are small, callus-like swellings that form on both vocal cords, typically at the junction of their front and middle thirds, due to overuse or incorrect use of the voice. They are benign and are common in teachers, singers, hawkers and anyone who talks loudly for long hours. They are sometimes called singer's nodules."}}, {"@type": "Question", "name": "Why is my voice hoarse and tired by the end of the day?", "acceptedAnswer": {"@type": "Answer", "text": "Nodules prevent the vocal cords from closing and vibrating smoothly, which makes the voice rough and effortful. Typical complaints are hoarseness, vocal fatigue after prolonged talking and inability to reach high or low notes while singing. A laryngoscopy examination confirms whether nodules are the cause."}}, {"@type": "Question", "name": "Can vocal nodules go away without surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Early, soft nodules often regress with voice rest, correction of vocal habits and structured voice therapy with a speech therapist. Steam inhalation helps reduce swelling around the cords when there is associated laryngitis. Surgery is reserved for well-formed nodules that persist despite these measures."}}, {"@type": "Question", "name": "When is surgery needed for vocal nodules?", "acceptedAnswer": {"@type": "Answer", "text": "Well-established, firm nodules that do not respond to voice therapy are removed by microlaryngoscopy, with or without laser, a precise day-care procedure that preserves the delicate cord lining. Voice therapy after surgery is important to stop the nodules from re-forming. Your ENT surgeon will advise the right timing."}}, {"@type": "Question", "name": "How can I prevent vocal nodules from coming back?", "acceptedAnswer": {"@type": "Answer", "text": "Avoid shouting, screaming and habitual throat clearing, take voice breaks during long teaching or speaking sessions, stay well hydrated and learn correct voice technique. Persistent hoarseness beyond two to three weeks should always be examined. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai offers evaluation and guidance; call +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Vocal Nodules Treatment", "item": "https://entvaishalisangole.com/throat-vocal-nodules.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -808,6 +814,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What are vocal nodules?</summary>
+                    <p>Vocal nodules are small, callus-like swellings that form on both vocal cords, typically at the junction of their front and middle thirds, due to overuse or incorrect use of the voice. They are benign and are common in teachers, singers, hawkers and anyone who talks loudly for long hours. They are sometimes called singer's nodules.</p>
+                </details>
+                <details>
+                    <summary>Why is my voice hoarse and tired by the end of the day?</summary>
+                    <p>Nodules prevent the vocal cords from closing and vibrating smoothly, which makes the voice rough and effortful. Typical complaints are hoarseness, vocal fatigue after prolonged talking and inability to reach high or low notes while singing. A laryngoscopy examination confirms whether nodules are the cause.</p>
+                </details>
+                <details>
+                    <summary>Can vocal nodules go away without surgery?</summary>
+                    <p>Early, soft nodules often regress with voice rest, correction of vocal habits and structured voice therapy with a speech therapist. Steam inhalation helps reduce swelling around the cords when there is associated laryngitis. Surgery is reserved for well-formed nodules that persist despite these measures.</p>
+                </details>
+                <details>
+                    <summary>When is surgery needed for vocal nodules?</summary>
+                    <p>Well-established, firm nodules that do not respond to voice therapy are removed by microlaryngoscopy, with or without laser, a precise day-care procedure that preserves the delicate cord lining. Voice therapy after surgery is important to stop the nodules from re-forming. Your ENT surgeon will advise the right timing.</p>
+                </details>
+                <details>
+                    <summary>How can I prevent vocal nodules from coming back?</summary>
+                    <p>Avoid shouting, screaming and habitual throat clearing, take voice breaks during long teaching or speaking sessions, stay well hydrated and learn correct voice technique. Persistent hoarseness beyond two to three weeks should always be examined. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai offers evaluation and guidance; call +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

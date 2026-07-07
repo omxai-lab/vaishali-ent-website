@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "My child has pushed a bead into the nose. What should I do?", "acceptedAnswer": {"@type": "Answer", "text": "Stay calm and do not attempt removal at home with tweezers, fingers or cotton buds, as this usually pushes the object deeper and risks it being inhaled into the airway. Ask the child to breathe through the mouth and avoid sniffing. Take the child to an ENT specialist promptly, where the object can be removed safely with proper instruments."}}, {"@type": "Question", "name": "Is a button battery in the nose an emergency?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, absolutely. A button cell battery leaks and causes corrosive burns that can destroy the nasal septum within hours. It requires urgent examination and removal, under anaesthesia if needed, so seek immediate medical care without waiting."}}, {"@type": "Question", "name": "How do I know if my child has something stuck in the nose?", "acceptedAnswer": {"@type": "Answer", "text": "The classic sign is a foul-smelling discharge from one nostril only, often blood-tinged, that does not respond to medicines. There may also be blockage of that side and soreness of the nostril. Any one-sided smelly nasal discharge in a small child should be assumed to be a foreign body until proven otherwise."}}, {"@type": "Question", "name": "How are nasal foreign bodies removed?", "acceptedAnswer": {"@type": "Answer", "text": "Most recently lodged objects are removed in the outpatient clinic by passing a blunt hook behind the object and sweeping it forward, a quick procedure in cooperative children. Long-standing or impacted objects, and all button batteries, are removed under general anaesthesia. X-rays or a CT scan may be done for objects that are not visible."}}, {"@type": "Question", "name": "What happens if a nasal foreign body is left untreated?", "acceptedAnswer": {"@type": "Answer", "text": "Retained objects cause persistent infection, sinusitis and, over years, can form a rhinolith, a stone-like mass of salts deposited around the object that becomes harder to remove. Early removal avoids these complications. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Nose Treatments", "item": "https://entvaishalisangole.com/nose-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Foreign Body in Nose", "item": "https://entvaishalisangole.com/nose-foreign-body-nose.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -796,6 +802,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>My child has pushed a bead into the nose. What should I do?</summary>
+                    <p>Stay calm and do not attempt removal at home with tweezers, fingers or cotton buds, as this usually pushes the object deeper and risks it being inhaled into the airway. Ask the child to breathe through the mouth and avoid sniffing. Take the child to an ENT specialist promptly, where the object can be removed safely with proper instruments.</p>
+                </details>
+                <details>
+                    <summary>Is a button battery in the nose an emergency?</summary>
+                    <p>Yes, absolutely. A button cell battery leaks and causes corrosive burns that can destroy the nasal septum within hours. It requires urgent examination and removal, under anaesthesia if needed, so seek immediate medical care without waiting.</p>
+                </details>
+                <details>
+                    <summary>How do I know if my child has something stuck in the nose?</summary>
+                    <p>The classic sign is a foul-smelling discharge from one nostril only, often blood-tinged, that does not respond to medicines. There may also be blockage of that side and soreness of the nostril. Any one-sided smelly nasal discharge in a small child should be assumed to be a foreign body until proven otherwise.</p>
+                </details>
+                <details>
+                    <summary>How are nasal foreign bodies removed?</summary>
+                    <p>Most recently lodged objects are removed in the outpatient clinic by passing a blunt hook behind the object and sweeping it forward, a quick procedure in cooperative children. Long-standing or impacted objects, and all button batteries, are removed under general anaesthesia. X-rays or a CT scan may be done for objects that are not visible.</p>
+                </details>
+                <details>
+                    <summary>What happens if a nasal foreign body is left untreated?</summary>
+                    <p>Retained objects cause persistent infection, sinusitis and, over years, can form a rhinolith, a stone-like mass of salts deposited around the object that becomes harder to remove. Early removal avoids these complications. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

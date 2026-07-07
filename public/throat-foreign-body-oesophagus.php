@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "A fish bone is stuck in my throat. Should I try home remedies?", "acceptedAnswer": {"@type": "Answer", "text": "Do not attempt removal at home and avoid the common practice of forcefully swallowing rice balls or bananas, which can push the bone deeper or injure the throat lining. Do not put fingers or instruments into the throat. If pricking pain, difficulty swallowing or drooling of saliva persists, see an ENT specialist immediately, since bones commonly lodge in the tonsil, tongue base or pyriform fossa where they can be removed safely."}}, {"@type": "Question", "name": "My child swallowed a coin. What should I do?", "acceptedAnswer": {"@type": "Answer", "text": "Stay calm and take the child for medical assessment; an X-ray will show whether the coin has lodged in the food pipe or passed into the stomach. Seek immediate emergency care if the child drools, refuses feeds, vomits, has chest pain or any breathing difficulty. A coin stuck in the oesophagus needs removal by endoscopy and should not be left in the hope it will pass."}}, {"@type": "Question", "name": "How is a foreign body in the food pipe removed?", "acceptedAnswer": {"@type": "Answer", "text": "Rigid oesophagoscopy under general anaesthesia is the safest and most reliable method: a tube is passed through the mouth and the object is extracted under direct vision. Very rarely, an impacted object that cannot be retrieved this way needs an open surgical approach. No attempt should be made to dislodge it blindly."}}, {"@type": "Question", "name": "What happens if a swallowed object is left inside?", "acceptedAnswer": {"@type": "Answer", "text": "A retained oesophageal foreign body can cause infection around the food pipe, pressure on the airway with cough and wheezing, and, most dangerously, perforation of the oesophagus. Sharp objects and button batteries are especially hazardous. Early removal prevents these complications, so evaluation should never be delayed."}}, {"@type": "Question", "name": "What are the signs that something is stuck in the oesophagus?", "acceptedAnswer": {"@type": "Answer", "text": "Typical features are a history of choking while eating or playing, pain or discomfort just above the collar bone, difficulty swallowing, drooling of saliva and sometimes cough or noisy breathing from airway compression. In young children who cannot explain, refusal of feeds and drooling are important clues. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407 for urgent assessment."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Foreign Body Oesophagus", "item": "https://entvaishalisangole.com/throat-foreign-body-oesophagus.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -824,6 +830,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>A fish bone is stuck in my throat. Should I try home remedies?</summary>
+                    <p>Do not attempt removal at home and avoid the common practice of forcefully swallowing rice balls or bananas, which can push the bone deeper or injure the throat lining. Do not put fingers or instruments into the throat. If pricking pain, difficulty swallowing or drooling of saliva persists, see an ENT specialist immediately, since bones commonly lodge in the tonsil, tongue base or pyriform fossa where they can be removed safely.</p>
+                </details>
+                <details>
+                    <summary>My child swallowed a coin. What should I do?</summary>
+                    <p>Stay calm and take the child for medical assessment; an X-ray will show whether the coin has lodged in the food pipe or passed into the stomach. Seek immediate emergency care if the child drools, refuses feeds, vomits, has chest pain or any breathing difficulty. A coin stuck in the oesophagus needs removal by endoscopy and should not be left in the hope it will pass.</p>
+                </details>
+                <details>
+                    <summary>How is a foreign body in the food pipe removed?</summary>
+                    <p>Rigid oesophagoscopy under general anaesthesia is the safest and most reliable method: a tube is passed through the mouth and the object is extracted under direct vision. Very rarely, an impacted object that cannot be retrieved this way needs an open surgical approach. No attempt should be made to dislodge it blindly.</p>
+                </details>
+                <details>
+                    <summary>What happens if a swallowed object is left inside?</summary>
+                    <p>A retained oesophageal foreign body can cause infection around the food pipe, pressure on the airway with cough and wheezing, and, most dangerously, perforation of the oesophagus. Sharp objects and button batteries are especially hazardous. Early removal prevents these complications, so evaluation should never be delayed.</p>
+                </details>
+                <details>
+                    <summary>What are the signs that something is stuck in the oesophagus?</summary>
+                    <p>Typical features are a history of choking while eating or playing, pain or discomfort just above the collar bone, difficulty swallowing, drooling of saliva and sometimes cough or noisy breathing from airway compression. In young children who cannot explain, refusal of feeds and drooling are important clues. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407 for urgent assessment.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

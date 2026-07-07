@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does my ear hurt even without an infection?", "acceptedAnswer": {"@type": "Answer", "text": "Not all earaches start in the ear. Pain can be referred from the teeth, jaw joint (TMJ), throat or sinuses, and wax buildup or water trapped in the canal can also cause aching. Because the causes are so varied, a proper examination is the reliable way to find the source."}}, {"@type": "Question", "name": "When should I take my child to a doctor for ear pain?", "acceptedAnswer": {"@type": "Answer", "text": "Seek medical help if fever crosses 104 degrees F, or 101 degrees F in an infant, or if there is swelling around the ear, discharge, dizziness or drooping of the face. Also seek help if severe pain stops suddenly, which can signal a ruptured eardrum. Young children who are fussy and keep tugging at an ear should be examined."}}, {"@type": "Question", "name": "Can a tooth or jaw problem really cause ear pain?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, this is called referred pain and it is common. Impacted or infected teeth, jaw joint (TMJ) problems and even arthritis of the jaw can all be felt as earache. If the ear itself looks normal on examination, these areas are checked next."}}, {"@type": "Question", "name": "How are earaches treated?", "acceptedAnswer": {"@type": "Answer", "text": "Treatment depends entirely on the cause: ear infections may need antibiotic tablets or drops, wax buildup is softened or removed, and TMJ or sinus problems are treated directly. Always complete the prescribed course of antibiotics even if the pain settles early. An earache that worsens or does not improve within 24 to 48 hours should be reviewed."}}, {"@type": "Question", "name": "Which tests may be needed for recurrent ear pain?", "acceptedAnswer": {"@type": "Answer", "text": "After an ear, nose and throat examination, hearing and middle ear function are often checked with audiometry (Rs.500) and impedance testing (Rs.500), both available at Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai. These help detect fluid behind the eardrum or early hearing loss. Call +91 9967752407 to schedule an evaluation."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Ear Treatments", "item": "https://entvaishalisangole.com/ear-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Earache Treatment", "item": "https://entvaishalisangole.com/ear-earaches.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -838,6 +844,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why does my ear hurt even without an infection?</summary>
+                    <p>Not all earaches start in the ear. Pain can be referred from the teeth, jaw joint (TMJ), throat or sinuses, and wax buildup or water trapped in the canal can also cause aching. Because the causes are so varied, a proper examination is the reliable way to find the source.</p>
+                </details>
+                <details>
+                    <summary>When should I take my child to a doctor for ear pain?</summary>
+                    <p>Seek medical help if fever crosses 104 degrees F, or 101 degrees F in an infant, or if there is swelling around the ear, discharge, dizziness or drooping of the face. Also seek help if severe pain stops suddenly, which can signal a ruptured eardrum. Young children who are fussy and keep tugging at an ear should be examined.</p>
+                </details>
+                <details>
+                    <summary>Can a tooth or jaw problem really cause ear pain?</summary>
+                    <p>Yes, this is called referred pain and it is common. Impacted or infected teeth, jaw joint (TMJ) problems and even arthritis of the jaw can all be felt as earache. If the ear itself looks normal on examination, these areas are checked next.</p>
+                </details>
+                <details>
+                    <summary>How are earaches treated?</summary>
+                    <p>Treatment depends entirely on the cause: ear infections may need antibiotic tablets or drops, wax buildup is softened or removed, and TMJ or sinus problems are treated directly. Always complete the prescribed course of antibiotics even if the pain settles early. An earache that worsens or does not improve within 24 to 48 hours should be reviewed.</p>
+                </details>
+                <details>
+                    <summary>Which tests may be needed for recurrent ear pain?</summary>
+                    <p>After an ear, nose and throat examination, hearing and middle ear function are often checked with audiometry (Rs.500) and impedance testing (Rs.500), both available at Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai. These help detect fluid behind the eardrum or early hearing loss. Call +91 9967752407 to schedule an evaluation.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the painless swelling in front of my ear?", "acceptedAnswer": {"@type": "Answer", "text": "A slowly growing, painless lump in front of or just below the ear often arises from the parotid, the large salivary gland in that area. About 80 percent of parotid tumours are benign, most commonly a pleomorphic adenoma. Even so, every parotid lump should be evaluated by a specialist because benign and malignant tumours can look similar early on."}}, {"@type": "Question", "name": "Are parotid tumours cancerous?", "acceptedAnswer": {"@type": "Answer", "text": "The majority are benign, but a minority are carcinomas, and some benign tumours can turn malignant after many years. Warning features include sudden rapid growth, pain in a previously painless lump, stony hardness, fixity to skin or deeper structures, restricted jaw movement and facial weakness. The type is confirmed only after proper evaluation and surgery."}}, {"@type": "Question", "name": "Why does facial weakness with a parotid lump matter?", "acceptedAnswer": {"@type": "Answer", "text": "The facial nerve, which moves the muscles of the face, runs directly through the parotid gland. A benign tumour usually pushes the nerve aside without weakening it, so facial asymmetry or difficulty closing the eye suggests a malignant tumour invading the nerve. This combination needs urgent specialist assessment."}}, {"@type": "Question", "name": "How are parotid tumours treated?", "acceptedAnswer": {"@type": "Answer", "text": "Surgery is the mainstay: superficial parotidectomy for benign tumours and radical or total conservative parotidectomy for malignant ones, with careful attention to the facial nerve. Parotid tumours respond poorly to radiation alone, and open biopsy of the lump is avoided; diagnosis relies on clinical examination, imaging and needle cytology where appropriate. Involved neck nodes may need neck dissection or radiotherapy."}}, {"@type": "Question", "name": "When should I get a parotid swelling checked?", "acceptedAnswer": {"@type": "Answer", "text": "Have any lump near the ear or jaw examined if it has been present for more than a few weeks, and urgently if it grows quickly, becomes painful or hard, or is accompanied by facial weakness. Early diagnosis keeps surgery simpler and safer. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Parotid Tumour Treatment & Surgery", "item": "https://entvaishalisangole.com/throat-parotid-tumours.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -850,6 +856,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What is the painless swelling in front of my ear?</summary>
+                    <p>A slowly growing, painless lump in front of or just below the ear often arises from the parotid, the large salivary gland in that area. About 80 percent of parotid tumours are benign, most commonly a pleomorphic adenoma. Even so, every parotid lump should be evaluated by a specialist because benign and malignant tumours can look similar early on.</p>
+                </details>
+                <details>
+                    <summary>Are parotid tumours cancerous?</summary>
+                    <p>The majority are benign, but a minority are carcinomas, and some benign tumours can turn malignant after many years. Warning features include sudden rapid growth, pain in a previously painless lump, stony hardness, fixity to skin or deeper structures, restricted jaw movement and facial weakness. The type is confirmed only after proper evaluation and surgery.</p>
+                </details>
+                <details>
+                    <summary>Why does facial weakness with a parotid lump matter?</summary>
+                    <p>The facial nerve, which moves the muscles of the face, runs directly through the parotid gland. A benign tumour usually pushes the nerve aside without weakening it, so facial asymmetry or difficulty closing the eye suggests a malignant tumour invading the nerve. This combination needs urgent specialist assessment.</p>
+                </details>
+                <details>
+                    <summary>How are parotid tumours treated?</summary>
+                    <p>Surgery is the mainstay: superficial parotidectomy for benign tumours and radical or total conservative parotidectomy for malignant ones, with careful attention to the facial nerve. Parotid tumours respond poorly to radiation alone, and open biopsy of the lump is avoided; diagnosis relies on clinical examination, imaging and needle cytology where appropriate. Involved neck nodes may need neck dissection or radiotherapy.</p>
+                </details>
+                <details>
+                    <summary>When should I get a parotid swelling checked?</summary>
+                    <p>Have any lump near the ear or jaw examined if it has been present for more than a few weeks, and urgently if it grows quickly, becomes painful or hard, or is accompanied by facial weakness. Early diagnosis keeps surgery simpler and safer. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

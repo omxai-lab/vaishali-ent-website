@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I know if my baby has an ear infection?", "acceptedAnswer": {"@type": "Answer", "text": "Babies cannot describe ear pain, so look for tugging or rubbing of the ear, unexplained crying, fever, irritability, poor feeding, vomiting or disturbed sleep. Sometimes the eardrum ruptures and pus-like fluid drains from the ear. Any of these signs deserves an ear examination."}}, {"@type": "Question", "name": "Why does my child get ear infections again and again?", "acceptedAnswer": {"@type": "Answer", "text": "In young children the Eustachian tube, which drains the middle ear, is short and functions poorly, so colds easily spread infection to the ear. Enlarged adenoids, nasal allergy, bottle feeding while lying flat, daycare exposure and household smoking all add to the risk. Treating these underlying factors reduces the repeat infections."}}, {"@type": "Question", "name": "Can fluid in the ear affect my child's hearing and speech?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Otitis media with effusion, fluid without active infection, often causes a hearing loss that parents notice as a loud television or the child repeatedly asking 'what?'. Untreated, prolonged hearing loss at a young age can delay speech and affect school performance, so it should be assessed and followed up."}}, {"@type": "Question", "name": "How is hearing tested in infants and young children?", "acceptedAnswer": {"@type": "Answer", "text": "Objective tests that need no response from the child are used: impedance audiometry (Rs.500) to detect middle ear fluid, OAE (Rs.1000) to screen the inner ear, and BERA (Rs.3000) or ASSR (Rs.3000) to measure hearing thresholds accurately. All of these are available at Dr. Vaishali Sangole's clinic in Kharghar, Navi Mumbai. Call +91 9967752407 for an appointment."}}, {"@type": "Question", "name": "When does a child with ear problems need surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Surgery such as grommet (ventilation tube) insertion, often with adenoid removal, is considered when middle ear fluid persists for months despite medical treatment or infections keep recurring with hearing loss. The decision is individual and made after examination and hearing tests. An ENT consultation will clarify whether your child actually needs it."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Ear Treatments", "item": "https://entvaishalisangole.com/ear-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Paediatric ENT Disorders Treatment", "item": "https://entvaishalisangole.com/ear-paediatric-disorders.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -824,6 +830,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>How do I know if my baby has an ear infection?</summary>
+                    <p>Babies cannot describe ear pain, so look for tugging or rubbing of the ear, unexplained crying, fever, irritability, poor feeding, vomiting or disturbed sleep. Sometimes the eardrum ruptures and pus-like fluid drains from the ear. Any of these signs deserves an ear examination.</p>
+                </details>
+                <details>
+                    <summary>Why does my child get ear infections again and again?</summary>
+                    <p>In young children the Eustachian tube, which drains the middle ear, is short and functions poorly, so colds easily spread infection to the ear. Enlarged adenoids, nasal allergy, bottle feeding while lying flat, daycare exposure and household smoking all add to the risk. Treating these underlying factors reduces the repeat infections.</p>
+                </details>
+                <details>
+                    <summary>Can fluid in the ear affect my child's hearing and speech?</summary>
+                    <p>Yes. Otitis media with effusion, fluid without active infection, often causes a hearing loss that parents notice as a loud television or the child repeatedly asking 'what?'. Untreated, prolonged hearing loss at a young age can delay speech and affect school performance, so it should be assessed and followed up.</p>
+                </details>
+                <details>
+                    <summary>How is hearing tested in infants and young children?</summary>
+                    <p>Objective tests that need no response from the child are used: impedance audiometry (Rs.500) to detect middle ear fluid, OAE (Rs.1000) to screen the inner ear, and BERA (Rs.3000) or ASSR (Rs.3000) to measure hearing thresholds accurately. All of these are available at Dr. Vaishali Sangole's clinic in Kharghar, Navi Mumbai. Call +91 9967752407 for an appointment.</p>
+                </details>
+                <details>
+                    <summary>When does a child with ear problems need surgery?</summary>
+                    <p>Surgery such as grommet (ventilation tube) insertion, often with adenoid removal, is considered when middle ear fluid persists for months despite medical treatment or infections keep recurring with hearing loss. The decision is individual and made after examination and hearing tests. An ENT consultation will clarify whether your child actually needs it.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

@@ -126,6 +126,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can vertigo be cured without long-term medicines?", "acceptedAnswer": {"@type": "Answer", "text": "Very often, yes. BPPV, the commonest vertigo, is treated with single-stage repositioning manoeuvres such as the Epley, Semont, Gufoni or Yacovino manoeuvre, which move the displaced crystals back to their place, frequently relieving vertigo in one or a few sessions. Long-term vertigo-suppressant tablets are generally avoided because they delay the brain's natural compensation."}}, {"@type": "Question", "name": "What is the Epley manoeuvre and does it work?", "acceptedAnswer": {"@type": "Answer", "text": "The Epley manoeuvre is a guided sequence of head and body positions that shifts loose calcium crystals out of the affected balance canal, and it has a high success rate for BPPV. It should be performed after the affected side and canal are properly identified, which is why doing it correctly in the clinic matters. Attempting manoeuvres at home without a diagnosis can be ineffective or worsen symptoms."}}, {"@type": "Question", "name": "What is vestibular rehabilitation therapy?", "acceptedAnswer": {"@type": "Answer", "text": "It is a structured exercise programme that trains the brain to compensate for a weak balance organ by relying more on signals from the eyes, neck and joints. Exercises progress from eye and head movements in bed, to sitting, standing and finally walking activities, along with gaze stabilisation practice. Done regularly, it reduces dizziness and steadily rebuilds confidence in movement."}}, {"@type": "Question", "name": "How long does it take to recover from vertigo with treatment?", "acceptedAnswer": {"@type": "Answer", "text": "BPPV often improves within days after successful repositioning, while compensation for other inner ear disorders through vestibular rehabilitation typically takes weeks of regular exercise. Gaze stabilisation practice is built up gradually, starting with seconds and progressing to a minute at a time. Recovery is faster when exercises are done consistently and suppressant medicines are minimised."}}, {"@type": "Question", "name": "Which tests are done before starting vertigo treatment?", "acceptedAnswer": {"@type": "Answer", "text": "Treatment works best when the exact cause and side are identified first, using positional testing and VNG (videonystagmography), with hearing tests such as audiometry (Rs.500) and impedance (Rs.500) when the inner ear is suspected. Based on these, the right manoeuvre or rehabilitation plan is chosen. Dr. Vaishali Sangole, ENT surgeon and otoneurologist in Kharghar, Navi Mumbai, can be consulted on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Vertigo Treatments", "item": "https://entvaishalisangole.com/vertigo.php"}, {"@type": "ListItem", "position": 3, "name": "ENT Specialist & Vertigo Treatment", "item": "https://entvaishalisangole.com/treatments-of-vertigo.php"}]}</script>
 </head>
 
 <body>
@@ -579,6 +581,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -1176,6 +1182,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Can vertigo be cured without long-term medicines?</summary>
+                    <p>Very often, yes. BPPV, the commonest vertigo, is treated with single-stage repositioning manoeuvres such as the Epley, Semont, Gufoni or Yacovino manoeuvre, which move the displaced crystals back to their place, frequently relieving vertigo in one or a few sessions. Long-term vertigo-suppressant tablets are generally avoided because they delay the brain's natural compensation.</p>
+                </details>
+                <details>
+                    <summary>What is the Epley manoeuvre and does it work?</summary>
+                    <p>The Epley manoeuvre is a guided sequence of head and body positions that shifts loose calcium crystals out of the affected balance canal, and it has a high success rate for BPPV. It should be performed after the affected side and canal are properly identified, which is why doing it correctly in the clinic matters. Attempting manoeuvres at home without a diagnosis can be ineffective or worsen symptoms.</p>
+                </details>
+                <details>
+                    <summary>What is vestibular rehabilitation therapy?</summary>
+                    <p>It is a structured exercise programme that trains the brain to compensate for a weak balance organ by relying more on signals from the eyes, neck and joints. Exercises progress from eye and head movements in bed, to sitting, standing and finally walking activities, along with gaze stabilisation practice. Done regularly, it reduces dizziness and steadily rebuilds confidence in movement.</p>
+                </details>
+                <details>
+                    <summary>How long does it take to recover from vertigo with treatment?</summary>
+                    <p>BPPV often improves within days after successful repositioning, while compensation for other inner ear disorders through vestibular rehabilitation typically takes weeks of regular exercise. Gaze stabilisation practice is built up gradually, starting with seconds and progressing to a minute at a time. Recovery is faster when exercises are done consistently and suppressant medicines are minimised.</p>
+                </details>
+                <details>
+                    <summary>Which tests are done before starting vertigo treatment?</summary>
+                    <p>Treatment works best when the exact cause and side are identified first, using positional testing and VNG (videonystagmography), with hearing tests such as audiometry (Rs.500) and impedance (Rs.500) when the inner ear is suspected. Based on these, the right manoeuvre or rehabilitation plan is chosen. Dr. Vaishali Sangole, ENT surgeon and otoneurologist in Kharghar, Navi Mumbai, can be consulted on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

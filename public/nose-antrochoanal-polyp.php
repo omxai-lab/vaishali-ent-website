@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What exactly is an antrochoanal polyp?", "acceptedAnswer": {"@type": "Answer", "text": "It is a smooth, pearly white, painless swelling that arises from the lining of the maxillary sinus and extends into the nose, sometimes reaching the back of the throat. It is benign, not a cancer, and is seen more often in children and young males."}}, {"@type": "Question", "name": "Why is my child's nose blocked only on one side?", "acceptedAnswer": {"@type": "Answer", "text": "One-sided nasal blockage that does not improve with decongestant drops, especially with one-sided discharge, is a typical presentation of an antrochoanal polyp. Many patients are treated repeatedly for a 'chronic cold' before the polyp is discovered. A nasal examination by an ENT specialist can identify it."}}, {"@type": "Question", "name": "Can an antrochoanal polyp be cured with medicines?", "acceptedAnswer": {"@type": "Answer", "text": "Medical treatment has little role; antibiotics and decongestants only help control associated infection. The definitive treatment is surgical removal, usually by Functional Endoscopic Sinus Surgery (FESS), which is done through the nostril without external cuts. A consultation helps plan the right timing."}}, {"@type": "Question", "name": "Which tests are needed before treatment?", "acceptedAnswer": {"@type": "Answer", "text": "Nasal endoscopy in the clinic shows the polyp, and a CT scan of the paranasal sinuses is the investigation of choice before surgery. The CT shows how far the polyp extends and maps the sinus anatomy for safe surgery."}}, {"@type": "Question", "name": "Can the polyp come back after surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Complete removal of the polyp along with its origin inside the maxillary sinus, as done in FESS with a microdebrider, keeps recurrence low. Incomplete removal is the usual reason for regrowth. Regular follow-up after surgery is advisable; Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Nose Treatments", "item": "https://entvaishalisangole.com/nose-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Antrochoanal Polyp Treatment", "item": "https://entvaishalisangole.com/nose-antrochoanal-polyp.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -798,6 +804,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What exactly is an antrochoanal polyp?</summary>
+                    <p>It is a smooth, pearly white, painless swelling that arises from the lining of the maxillary sinus and extends into the nose, sometimes reaching the back of the throat. It is benign, not a cancer, and is seen more often in children and young males.</p>
+                </details>
+                <details>
+                    <summary>Why is my child's nose blocked only on one side?</summary>
+                    <p>One-sided nasal blockage that does not improve with decongestant drops, especially with one-sided discharge, is a typical presentation of an antrochoanal polyp. Many patients are treated repeatedly for a 'chronic cold' before the polyp is discovered. A nasal examination by an ENT specialist can identify it.</p>
+                </details>
+                <details>
+                    <summary>Can an antrochoanal polyp be cured with medicines?</summary>
+                    <p>Medical treatment has little role; antibiotics and decongestants only help control associated infection. The definitive treatment is surgical removal, usually by Functional Endoscopic Sinus Surgery (FESS), which is done through the nostril without external cuts. A consultation helps plan the right timing.</p>
+                </details>
+                <details>
+                    <summary>Which tests are needed before treatment?</summary>
+                    <p>Nasal endoscopy in the clinic shows the polyp, and a CT scan of the paranasal sinuses is the investigation of choice before surgery. The CT shows how far the polyp extends and maps the sinus anatomy for safe surgery.</p>
+                </details>
+                <details>
+                    <summary>Can the polyp come back after surgery?</summary>
+                    <p>Complete removal of the polyp along with its origin inside the maxillary sinus, as done in FESS with a microdebrider, keeps recurrence low. Incomplete removal is the usual reason for regrowth. Regular follow-up after surgery is advisable; Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why has one side of my face suddenly become weak?", "acceptedAnswer": {"@type": "Answer", "text": "Sudden one-sided facial weakness is usually due to a problem of the facial nerve, which runs a long course through the ear before reaching the face muscles. Ear infections, injury, viral inflammation and, rarely, tumours can all affect it. Early diagnosis matters because prompt treatment improves the chance of recovery, so seek medical attention quickly."}}, {"@type": "Question", "name": "Can an ear infection cause facial paralysis?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The facial nerve passes through the middle ear and mastoid bone, so infections in these areas can inflame or compress the nerve and cause weakness of the face or eye closure. This is one reason ear infections with facial weakness are treated urgently by an ENT specialist."}}, {"@type": "Question", "name": "Is facial weakness always a stroke?", "acceptedAnswer": {"@type": "Answer", "text": "No, most isolated facial weakness is due to a facial nerve disorder rather than a stroke. However, if weakness comes with slurred speech, limb weakness, severe headache or vision problems, treat it as an emergency and seek immediate hospital care. A doctor can distinguish the two on examination."}}, {"@type": "Question", "name": "What tests are done for facial nerve disorders?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluation includes a careful examination of the ear and face, hearing assessment with audiometry (Rs.500) and impedance testing (Rs.500), and imaging such as CT or MRI when a structural cause is suspected. These tests locate where along its course the nerve is affected. Dr. Vaishali Sangole's clinic in Kharghar offers the hearing tests on site."}}, {"@type": "Question", "name": "Can facial nerve problems and ear tumours be treated?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Depending on the cause, medical treatment, physiotherapy or surgery can reverse or at least improve the weakness and deformity, and ear tumours are managed with medical and surgical options after proper diagnosis. Outcomes are generally better with early treatment, so consult an ENT specialist promptly; appointments can be booked on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Ear Treatments", "item": "https://entvaishalisangole.com/ear-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Facial Nerve Disorder Treatment", "item": "https://entvaishalisangole.com/ear-facial.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -704,6 +710,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why has one side of my face suddenly become weak?</summary>
+                    <p>Sudden one-sided facial weakness is usually due to a problem of the facial nerve, which runs a long course through the ear before reaching the face muscles. Ear infections, injury, viral inflammation and, rarely, tumours can all affect it. Early diagnosis matters because prompt treatment improves the chance of recovery, so seek medical attention quickly.</p>
+                </details>
+                <details>
+                    <summary>Can an ear infection cause facial paralysis?</summary>
+                    <p>Yes. The facial nerve passes through the middle ear and mastoid bone, so infections in these areas can inflame or compress the nerve and cause weakness of the face or eye closure. This is one reason ear infections with facial weakness are treated urgently by an ENT specialist.</p>
+                </details>
+                <details>
+                    <summary>Is facial weakness always a stroke?</summary>
+                    <p>No, most isolated facial weakness is due to a facial nerve disorder rather than a stroke. However, if weakness comes with slurred speech, limb weakness, severe headache or vision problems, treat it as an emergency and seek immediate hospital care. A doctor can distinguish the two on examination.</p>
+                </details>
+                <details>
+                    <summary>What tests are done for facial nerve disorders?</summary>
+                    <p>Evaluation includes a careful examination of the ear and face, hearing assessment with audiometry (Rs.500) and impedance testing (Rs.500), and imaging such as CT or MRI when a structural cause is suspected. These tests locate where along its course the nerve is affected. Dr. Vaishali Sangole's clinic in Kharghar offers the hearing tests on site.</p>
+                </details>
+                <details>
+                    <summary>Can facial nerve problems and ear tumours be treated?</summary>
+                    <p>Yes. Depending on the cause, medical treatment, physiotherapy or surgery can reverse or at least improve the weakness and deformity, and ear tumours are managed with medical and surgical options after proper diagnosis. Outcomes are generally better with early treatment, so consult an ENT specialist promptly; appointments can be booked on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

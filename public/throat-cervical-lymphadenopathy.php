@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "I have a lump in my neck. Should I be worried?", "acceptedAnswer": {"@type": "Answer", "text": "Most neck lumps are lymph nodes reacting to an infection of the throat, teeth or scalp, and they settle as the infection clears. A node that persists beyond two to three weeks, keeps enlarging, feels hard or is fixed to surrounding tissue needs proper evaluation. It is sensible to have any persistent neck swelling examined rather than watch it indefinitely."}}, {"@type": "Question", "name": "What are the common causes of swollen neck glands?", "acceptedAnswer": {"@type": "Answer", "text": "Acute causes include bacterial and viral infections such as tonsillitis and infectious mononucleosis. Chronic causes range from tuberculosis, which is common in India, to less common conditions like lymphoma, leukaemia and secondary deposits from cancers of the head and neck. The pattern, duration and associated symptoms guide the diagnosis."}}, {"@type": "Question", "name": "Can swollen neck nodes be tuberculosis?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, tuberculous lymphadenitis is one of the commonest causes of long-standing neck node enlargement in our population, and it can occur even without lung symptoms. It is usually confirmed by fine needle aspiration cytology (FNAC) of the node. With proper anti-tubercular treatment the outlook is good."}}, {"@type": "Question", "name": "What tests are done for enlarged neck lymph nodes?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluation starts with a thorough ENT examination to find any source of infection or growth, along with routine blood tests and an X-ray. Fine needle aspiration cytology (FNAC) of the node is the key test, and an excision biopsy is done if the diagnosis remains unclear. These tests separate simple infections from conditions needing specific treatment."}}, {"@type": "Question", "name": "Which warning signs with a neck lump need urgent attention?", "acceptedAnswer": {"@type": "Answer", "text": "See a specialist promptly if a node is painless but steadily growing, feels stony hard, or is accompanied by weight loss, evening fevers, night sweats, voice change or difficulty swallowing. These features need investigation to rule out tuberculosis or malignancy. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Cervical Lymphadenopathy Treatment", "item": "https://entvaishalisangole.com/throat-cervical-lymphadenopathy.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -854,6 +860,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>I have a lump in my neck. Should I be worried?</summary>
+                    <p>Most neck lumps are lymph nodes reacting to an infection of the throat, teeth or scalp, and they settle as the infection clears. A node that persists beyond two to three weeks, keeps enlarging, feels hard or is fixed to surrounding tissue needs proper evaluation. It is sensible to have any persistent neck swelling examined rather than watch it indefinitely.</p>
+                </details>
+                <details>
+                    <summary>What are the common causes of swollen neck glands?</summary>
+                    <p>Acute causes include bacterial and viral infections such as tonsillitis and infectious mononucleosis. Chronic causes range from tuberculosis, which is common in India, to less common conditions like lymphoma, leukaemia and secondary deposits from cancers of the head and neck. The pattern, duration and associated symptoms guide the diagnosis.</p>
+                </details>
+                <details>
+                    <summary>Can swollen neck nodes be tuberculosis?</summary>
+                    <p>Yes, tuberculous lymphadenitis is one of the commonest causes of long-standing neck node enlargement in our population, and it can occur even without lung symptoms. It is usually confirmed by fine needle aspiration cytology (FNAC) of the node. With proper anti-tubercular treatment the outlook is good.</p>
+                </details>
+                <details>
+                    <summary>What tests are done for enlarged neck lymph nodes?</summary>
+                    <p>Evaluation starts with a thorough ENT examination to find any source of infection or growth, along with routine blood tests and an X-ray. Fine needle aspiration cytology (FNAC) of the node is the key test, and an excision biopsy is done if the diagnosis remains unclear. These tests separate simple infections from conditions needing specific treatment.</p>
+                </details>
+                <details>
+                    <summary>Which warning signs with a neck lump need urgent attention?</summary>
+                    <p>See a specialist promptly if a node is painless but steadily growing, feels stony hard, or is accompanied by weight loss, evening fevers, night sweats, voice change or difficulty swallowing. These features need investigation to rule out tuberculosis or malignancy. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

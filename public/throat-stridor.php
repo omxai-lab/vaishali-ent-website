@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is stridor and what does it mean?", "acceptedAnswer": {"@type": "Answer", "text": "Stridor is a harsh, noisy sound produced when air moves through a narrowed airway; it is a symptom of obstruction, not a disease in itself. Noise on breathing in suggests obstruction at or above the voice box, while noise on breathing out points to the lower airways. Every case of stridor must be treated as an emergency until the cause is found."}}, {"@type": "Question", "name": "Is noisy breathing in my child an emergency?", "acceptedAnswer": {"@type": "Answer", "text": "Seek immediate emergency care if noisy breathing comes with bluish lips or face, in-drawing of the chest or neck with each breath, drooling, inability to swallow, high fever, unusual drowsiness, or if it started suddenly after choking on food or a small object. Even without these signs, new-onset stridor in a child should be evaluated the same day. Do not give food or water on the way if the child is struggling to breathe."}}, {"@type": "Question", "name": "What causes stridor?", "acceptedAnswer": {"@type": "Answer", "text": "In infants, congenital conditions like laryngomalacia and laryngeal webs are common causes. In older children and adults, causes include infections such as epiglottitis and laryngotracheobronchitis, inhaled foreign bodies, vocal cord palsy, injury from intubation or burns, and tumours of the larynx. The pattern of onset and age narrow down the likely cause."}}, {"@type": "Question", "name": "How is the cause of stridor diagnosed?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluation includes a detailed history of onset, choking episodes and past voice change, examination of the airway, neck and chest, X-rays of the neck and chest, and a CT scan when needed. Direct laryngoscopy and fibre-optic bronchoscopy confirm the exact site and nature of obstruction. These are done with full readiness to secure the airway."}}, {"@type": "Question", "name": "How is stridor treated?", "acceptedAnswer": {"@type": "Answer", "text": "Management starts with hospital admission, oxygen, and medicines such as steroids and antibiotics depending on the cause, followed by definitive treatment of the underlying condition. If respiratory distress is severe, a tracheostomy may be needed to secure the airway. For evaluation of recurrent noisy breathing or voice problems, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Stridor (Noisy Breathing) Treatment", "item": "https://entvaishalisangole.com/throat-stridor.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -886,6 +892,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What is stridor and what does it mean?</summary>
+                    <p>Stridor is a harsh, noisy sound produced when air moves through a narrowed airway; it is a symptom of obstruction, not a disease in itself. Noise on breathing in suggests obstruction at or above the voice box, while noise on breathing out points to the lower airways. Every case of stridor must be treated as an emergency until the cause is found.</p>
+                </details>
+                <details>
+                    <summary>Is noisy breathing in my child an emergency?</summary>
+                    <p>Seek immediate emergency care if noisy breathing comes with bluish lips or face, in-drawing of the chest or neck with each breath, drooling, inability to swallow, high fever, unusual drowsiness, or if it started suddenly after choking on food or a small object. Even without these signs, new-onset stridor in a child should be evaluated the same day. Do not give food or water on the way if the child is struggling to breathe.</p>
+                </details>
+                <details>
+                    <summary>What causes stridor?</summary>
+                    <p>In infants, congenital conditions like laryngomalacia and laryngeal webs are common causes. In older children and adults, causes include infections such as epiglottitis and laryngotracheobronchitis, inhaled foreign bodies, vocal cord palsy, injury from intubation or burns, and tumours of the larynx. The pattern of onset and age narrow down the likely cause.</p>
+                </details>
+                <details>
+                    <summary>How is the cause of stridor diagnosed?</summary>
+                    <p>Evaluation includes a detailed history of onset, choking episodes and past voice change, examination of the airway, neck and chest, X-rays of the neck and chest, and a CT scan when needed. Direct laryngoscopy and fibre-optic bronchoscopy confirm the exact site and nature of obstruction. These are done with full readiness to secure the airway.</p>
+                </details>
+                <details>
+                    <summary>How is stridor treated?</summary>
+                    <p>Management starts with hospital admission, oxygen, and medicines such as steroids and antibiotics depending on the cause, followed by definitive treatment of the underlying condition. If respiratory distress is severe, a tracheostomy may be needed to secure the airway. For evaluation of recurrent noisy breathing or voice problems, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I stop a nosebleed at home?", "acceptedAnswer": {"@type": "Answer", "text": "Sit upright, lean slightly forward and pinch the soft lower part of the nose continuously for about 10 minutes while breathing through the mouth; a cold compress on the bridge of the nose helps. Do not lie down, tilt the head back or pack cotton deep inside. Seek immediate medical care if bleeding continues beyond 20 minutes, is very heavy, follows a head injury, or is accompanied by giddiness or weakness."}}, {"@type": "Question", "name": "What causes frequent nosebleeds?", "acceptedAnswer": {"@type": "Answer", "text": "Common causes include dryness of the nasal lining, nose picking or injury, and nasal infections or allergy. In older adults, high blood pressure with fragile blood vessels is one of the commonest causes, while bleeding disorders, certain medicines like blood thinners and, rarely, tumours are other reasons. Recurrent bleeding should always be evaluated rather than ignored."}}, {"@type": "Question", "name": "Are nosebleeds a sign of high blood pressure?", "acceptedAnswer": {"@type": "Answer", "text": "They can be, particularly in the elderly, where hypertension with atherosclerotic vessels is among the most common causes of epistaxis. Anyone with recurrent nosebleeds should have their blood pressure checked. Controlling the pressure is part of preventing further bleeds."}}, {"@type": "Question", "name": "When is a nosebleed serious enough to see a specialist?", "acceptedAnswer": {"@type": "Answer", "text": "See an ENT specialist if bleeds are recurrent, occur from one side along with nasal blockage, happen in an elderly person or someone on blood-thinning medicines, or are heavy enough to cause weakness. One-sided bleeding with blockage in a young male or an older adult needs endoscopic examination to rule out a growth."}}, {"@type": "Question", "name": "What tests and treatments are available for epistaxis?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluation includes blood pressure monitoring, a haemogram and bleeding profile, nasal endoscopy and, when needed, a CT scan. Treatment ranges from cautery of the bleeding point to nasal packing and treatment of the underlying cause. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407 for evaluation of recurrent nosebleeds."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Nose Treatments", "item": "https://entvaishalisangole.com/nose-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Epistaxis (Nose Bleed) Treatment", "item": "https://entvaishalisangole.com/nose-epistaxis.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -856,6 +862,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>How do I stop a nosebleed at home?</summary>
+                    <p>Sit upright, lean slightly forward and pinch the soft lower part of the nose continuously for about 10 minutes while breathing through the mouth; a cold compress on the bridge of the nose helps. Do not lie down, tilt the head back or pack cotton deep inside. Seek immediate medical care if bleeding continues beyond 20 minutes, is very heavy, follows a head injury, or is accompanied by giddiness or weakness.</p>
+                </details>
+                <details>
+                    <summary>What causes frequent nosebleeds?</summary>
+                    <p>Common causes include dryness of the nasal lining, nose picking or injury, and nasal infections or allergy. In older adults, high blood pressure with fragile blood vessels is one of the commonest causes, while bleeding disorders, certain medicines like blood thinners and, rarely, tumours are other reasons. Recurrent bleeding should always be evaluated rather than ignored.</p>
+                </details>
+                <details>
+                    <summary>Are nosebleeds a sign of high blood pressure?</summary>
+                    <p>They can be, particularly in the elderly, where hypertension with atherosclerotic vessels is among the most common causes of epistaxis. Anyone with recurrent nosebleeds should have their blood pressure checked. Controlling the pressure is part of preventing further bleeds.</p>
+                </details>
+                <details>
+                    <summary>When is a nosebleed serious enough to see a specialist?</summary>
+                    <p>See an ENT specialist if bleeds are recurrent, occur from one side along with nasal blockage, happen in an elderly person or someone on blood-thinning medicines, or are heavy enough to cause weakness. One-sided bleeding with blockage in a young male or an older adult needs endoscopic examination to rule out a growth.</p>
+                </details>
+                <details>
+                    <summary>What tests and treatments are available for epistaxis?</summary>
+                    <p>Evaluation includes blood pressure monitoring, a haemogram and bleeding profile, nasal endoscopy and, when needed, a CT scan. Treatment ranges from cautery of the bleeding point to nasal packing and treatment of the underlying cause. Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be contacted on +91 9967752407 for evaluation of recurrent nosebleeds.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

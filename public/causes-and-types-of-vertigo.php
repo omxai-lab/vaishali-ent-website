@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the most common cause of vertigo?", "acceptedAnswer": {"@type": "Answer", "text": "Benign paroxysmal positional vertigo (BPPV) is one of the commonest causes: brief, intense spinning triggered by head position changes such as rolling over or getting out of bed. Vestibular migraine is also very frequent, accounting for around 40 percent of cases in our practice. Identifying which type you have is the key to the right treatment."}}, {"@type": "Question", "name": "How do I know if my vertigo is BPPV?", "acceptedAnswer": {"@type": "Answer", "text": "BPPV attacks are short, lasting seconds to a minute, and are set off by specific head movements like turning in bed, lying down or looking up. Attacks may occur for a few weeks and then disappear for a while. Positional testing in the clinic confirms the diagnosis and identifies which balance canal is involved."}}, {"@type": "Question", "name": "Can migraine cause vertigo even without a headache?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. In vestibular migraine, vertigo may occur with or without the headache, often with sensitivity to light and sound, a history of repeated attacks and a family history of migraine. Tinnitus can occur due to spasm of the inner ear vessels. It is a common and treatable cause that is often missed."}}, {"@type": "Question", "name": "When could vertigo be a sign of stroke?", "acceptedAnswer": {"@type": "Answer", "text": "Seek immediate emergency care if dizziness comes with weakness or numbness of the face or limbs, slurred speech, double vision, severe imbalance or a sudden severe headache. Risk is higher in older people and those with hypertension, diabetes, smoking or heart disease, though strokes can occur in the young too. When in doubt, treat sudden severe vertigo as an emergency."}}, {"@type": "Question", "name": "Which tests find the cause of vertigo?", "acceptedAnswer": {"@type": "Answer", "text": "A structured otoneurological assessment includes positional tests, VNG (videonystagmography) to record eye movements and identify the affected balance organ, and hearing tests such as audiometry (Rs.500) and impedance (Rs.500) when Meniere's disease or labyrinthitis is suspected. Dr. Vaishali Sangole, ENT surgeon and otoneurologist in Kharghar, Navi Mumbai, offers these tests at the clinic; call +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Vertigo Treatments", "item": "https://entvaishalisangole.com/vertigo.php"}, {"@type": "ListItem", "position": 3, "name": "Causes & Types of Vertigo", "item": "https://entvaishalisangole.com/causes-and-types-of-vertigo.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -1028,6 +1034,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What is the most common cause of vertigo?</summary>
+                    <p>Benign paroxysmal positional vertigo (BPPV) is one of the commonest causes: brief, intense spinning triggered by head position changes such as rolling over or getting out of bed. Vestibular migraine is also very frequent, accounting for around 40 percent of cases in our practice. Identifying which type you have is the key to the right treatment.</p>
+                </details>
+                <details>
+                    <summary>How do I know if my vertigo is BPPV?</summary>
+                    <p>BPPV attacks are short, lasting seconds to a minute, and are set off by specific head movements like turning in bed, lying down or looking up. Attacks may occur for a few weeks and then disappear for a while. Positional testing in the clinic confirms the diagnosis and identifies which balance canal is involved.</p>
+                </details>
+                <details>
+                    <summary>Can migraine cause vertigo even without a headache?</summary>
+                    <p>Yes. In vestibular migraine, vertigo may occur with or without the headache, often with sensitivity to light and sound, a history of repeated attacks and a family history of migraine. Tinnitus can occur due to spasm of the inner ear vessels. It is a common and treatable cause that is often missed.</p>
+                </details>
+                <details>
+                    <summary>When could vertigo be a sign of stroke?</summary>
+                    <p>Seek immediate emergency care if dizziness comes with weakness or numbness of the face or limbs, slurred speech, double vision, severe imbalance or a sudden severe headache. Risk is higher in older people and those with hypertension, diabetes, smoking or heart disease, though strokes can occur in the young too. When in doubt, treat sudden severe vertigo as an emergency.</p>
+                </details>
+                <details>
+                    <summary>Which tests find the cause of vertigo?</summary>
+                    <p>A structured otoneurological assessment includes positional tests, VNG (videonystagmography) to record eye movements and identify the affected balance organ, and hearing tests such as audiometry (Rs.500) and impedance (Rs.500) when Meniere's disease or labyrinthitis is suspected. Dr. Vaishali Sangole, ENT surgeon and otoneurologist in Kharghar, Navi Mumbai, offers these tests at the clinic; call +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

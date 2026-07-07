@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a deviated nasal septum and does everyone need treatment?", "acceptedAnswer": {"@type": "Answer", "text": "The septum is the partition dividing the nose into two nostrils; a deviated septum means it is bent to one side. Minor deviations are very common and need no treatment at all. Treatment is advised only when the deviation causes symptoms such as persistent blockage, sinus infections or nosebleeds."}}, {"@type": "Question", "name": "What symptoms does a deviated septum cause?", "acceptedAnswer": {"@type": "Answer", "text": "The usual complaints are blockage of one nostril, mouth breathing, snoring, recurrent sinusitis, headaches, nosebleeds and occasionally a reduced sense of smell. Some people also notice an external bend of the nose, often after an old injury."}}, {"@type": "Question", "name": "Can a deviated septum cause headaches?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it can. A severely deviated septum can block sinus drainage and cause sinusitis-related headache, and pressure of the septum on nasal structures can produce what is called a vacuum headache. Evaluating the nose is worthwhile when headaches come with nasal blockage."}}, {"@type": "Question", "name": "What is septoplasty and is it safe?", "acceptedAnswer": {"@type": "Answer", "text": "Septoplasty is the operation that straightens the septum; it is done entirely through the nostrils with no external cuts or change in facial appearance. It is a routine, safe procedure and is often combined with endoscopic sinus surgery (FESS) if the sinuses are also diseased. Your surgeon will advise which option fits your case."}}, {"@type": "Question", "name": "How is a deviated septum diagnosed?", "acceptedAnswer": {"@type": "Answer", "text": "An ENT examination with anterior rhinoscopy or nasal endoscopy shows the deviation directly. X-rays or a CT scan of the paranasal sinuses are done when sinusitis or a posterior deviation is suspected. For an assessment, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Nose Treatments", "item": "https://entvaishalisangole.com/nose-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Deviated Nasal Septum Treatment", "item": "https://entvaishalisangole.com/nose-deviated-nasal-septum.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -826,6 +832,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What is a deviated nasal septum and does everyone need treatment?</summary>
+                    <p>The septum is the partition dividing the nose into two nostrils; a deviated septum means it is bent to one side. Minor deviations are very common and need no treatment at all. Treatment is advised only when the deviation causes symptoms such as persistent blockage, sinus infections or nosebleeds.</p>
+                </details>
+                <details>
+                    <summary>What symptoms does a deviated septum cause?</summary>
+                    <p>The usual complaints are blockage of one nostril, mouth breathing, snoring, recurrent sinusitis, headaches, nosebleeds and occasionally a reduced sense of smell. Some people also notice an external bend of the nose, often after an old injury.</p>
+                </details>
+                <details>
+                    <summary>Can a deviated septum cause headaches?</summary>
+                    <p>Yes, it can. A severely deviated septum can block sinus drainage and cause sinusitis-related headache, and pressure of the septum on nasal structures can produce what is called a vacuum headache. Evaluating the nose is worthwhile when headaches come with nasal blockage.</p>
+                </details>
+                <details>
+                    <summary>What is septoplasty and is it safe?</summary>
+                    <p>Septoplasty is the operation that straightens the septum; it is done entirely through the nostrils with no external cuts or change in facial appearance. It is a routine, safe procedure and is often combined with endoscopic sinus surgery (FESS) if the sinuses are also diseased. Your surgeon will advise which option fits your case.</p>
+                </details>
+                <details>
+                    <summary>How is a deviated septum diagnosed?</summary>
+                    <p>An ENT examination with anterior rhinoscopy or nasal endoscopy shows the deviation directly. X-rays or a CT scan of the paranasal sinuses are done when sinusitis or a posterior deviation is suspected. For an assessment, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

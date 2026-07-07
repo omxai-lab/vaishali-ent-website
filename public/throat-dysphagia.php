@@ -124,6 +124,8 @@
     <meta property="og:site_name" content="Dr. Vaishali Sangole's ENT &amp; Vertigo Clinic">
     <meta name="twitter:card" content="summary">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Dr. Vaishali Sangole's ENT & Vertigo Clinic", "url": "https://entvaishalisangole.com/", "image": "https://entvaishalisangole.com/images/doctor-img.jpg", "telephone": "+919967752407", "email": "info@vaishalisangole.com", "priceRange": "₹₹", "address": {"@type": "PostalAddress", "streetAddress": "18, Plot 14, Meera Arcade, Sector 20, Near Shilp Chowk", "addressLocality": "Kharghar, Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "410210", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 19.0480689, "longitude": 73.0704948}, "medicalSpecialty": "Otolaryngologic", "physician": {"@type": "Physician", "name": "Dr. Vaishali Sangole", "medicalSpecialty": "Otolaryngologic", "description": "ENT Surgeon & Otoneurologist, MS (ENT), 20+ years experience. Associate Professor, MGM Medical College, Navi Mumbai."}, "sameAs": ["https://www.facebook.com/DrVaishaliSangolesEntClinic/", "https://www.instagram.com/dr.vaishali_27", "https://in.linkedin.com/in/dr-vaishali-sangole-8105943b"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do I have difficulty swallowing?", "acceptedAnswer": {"@type": "Answer", "text": "Swallowing difficulty, called dysphagia, has many causes: painful throat conditions like tonsillitis and quinsy, acid reflux and its strictures, foreign body impaction, muscle spasm, neurological disorders and growths in the throat or food pipe. Painful short-lived difficulty usually accompanies infection, while painless progressive difficulty has more significant causes. An examination is needed to pinpoint which applies to you."}}, {"@type": "Question", "name": "Is difficulty swallowing a serious symptom?", "acceptedAnswer": {"@type": "Answer", "text": "It can be. Painless difficulty that steadily worsens, especially for solid food in a middle-aged or older person, must be investigated promptly to rule out a growth in the throat or oesophagus. Difficulty from a throat infection, by contrast, is painful and settles as the infection resolves."}}, {"@type": "Question", "name": "Can acid reflux cause swallowing problems?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Reflux oesophagitis inflames the lower food pipe and can cause pain and difficulty in swallowing, and long-standing reflux can scar the oesophagus into a stricture that narrows the passage. Treating the reflux early prevents these complications."}}, {"@type": "Question", "name": "What tests are done for swallowing difficulty?", "acceptedAnswer": {"@type": "Answer", "text": "After a detailed throat examination, tests may include endoscopy of the throat and food pipe, a barium swallow X-ray and imaging of the neck and chest, chosen according to the suspected cause. Blood tests help when anaemia-related conditions like Plummer Vinson syndrome are suspected."}}, {"@type": "Question", "name": "When should I see a doctor urgently about swallowing?", "acceptedAnswer": {"@type": "Answer", "text": "Seek prompt care if you cannot swallow even liquids or your own saliva, if food sticks with chest pain, if there is choking or breathlessness, or if swallowing difficulty comes with weight loss or voice change. For evaluation, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://entvaishalisangole.com/"}, {"@type": "ListItem", "position": 2, "name": "Throat Treatments", "item": "https://entvaishalisangole.com/throat-treatments.php"}, {"@type": "ListItem", "position": 3, "name": "Dysphagia (Swallowing Difficulty) Treatment", "item": "https://entvaishalisangole.com/throat-dysphagia.php"}]}</script>
 </head>
 
 <body>
@@ -577,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
@@ -832,6 +838,52 @@
     </div>
 
 </section>
+
+
+
+<!-- FAQ section -->
+<section class="section-md faq-section">
+    <style>
+    .faq-section{padding:20px 0 60px;}
+    .faq-section h2{margin-bottom:25px;}
+    .faq-section details{border:1px solid #e8e8e8;border-radius:8px;margin-bottom:12px;background:#fff;}
+    .faq-section summary{cursor:pointer;padding:16px 45px 16px 20px;font-weight:600;list-style:none;position:relative;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--pbmit-global-color);font-size:24px;line-height:1;}
+    .faq-section details[open]{border-color:var(--pbmit-global-color);}
+    .faq-section details[open] summary{color:var(--pbmit-global-color);}
+    .faq-section details[open] summary::after{content:"\2212";}
+    .faq-section details p{padding:0 20px 16px;margin:0;}
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Why do I have difficulty swallowing?</summary>
+                    <p>Swallowing difficulty, called dysphagia, has many causes: painful throat conditions like tonsillitis and quinsy, acid reflux and its strictures, foreign body impaction, muscle spasm, neurological disorders and growths in the throat or food pipe. Painful short-lived difficulty usually accompanies infection, while painless progressive difficulty has more significant causes. An examination is needed to pinpoint which applies to you.</p>
+                </details>
+                <details>
+                    <summary>Is difficulty swallowing a serious symptom?</summary>
+                    <p>It can be. Painless difficulty that steadily worsens, especially for solid food in a middle-aged or older person, must be investigated promptly to rule out a growth in the throat or oesophagus. Difficulty from a throat infection, by contrast, is painful and settles as the infection resolves.</p>
+                </details>
+                <details>
+                    <summary>Can acid reflux cause swallowing problems?</summary>
+                    <p>Yes. Reflux oesophagitis inflames the lower food pipe and can cause pain and difficulty in swallowing, and long-standing reflux can scar the oesophagus into a stricture that narrows the passage. Treating the reflux early prevents these complications.</p>
+                </details>
+                <details>
+                    <summary>What tests are done for swallowing difficulty?</summary>
+                    <p>After a detailed throat examination, tests may include endoscopy of the throat and food pipe, a barium swallow X-ray and imaging of the neck and chest, chosen according to the suspected cause. Blood tests help when anaemia-related conditions like Plummer Vinson syndrome are suspected.</p>
+                </details>
+                <details>
+                    <summary>When should I see a doctor urgently about swallowing?</summary>
+                    <p>Seek prompt care if you cannot swallow even liquids or your own saliva, if food sticks with chest pain, if there is choking or breathlessness, or if swallowing difficulty comes with weight loss or voice change. For evaluation, Dr. Vaishali Sangole's ENT clinic in Kharghar, Navi Mumbai can be reached on +91 9967752407.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section End -->
 
 <a href="https://api.whatsapp.com/send?phone=+919967752407" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
 

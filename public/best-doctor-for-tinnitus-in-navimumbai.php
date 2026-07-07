@@ -117,7 +117,7 @@
 	</style>
 
 
-    <link rel="canonical" href="https://entvaishalisangole.com/best-doctor-for-tinnitus-in-navimumbai.php">
+    <link rel="canonical" href="https://entvaishalisangole.com/best-doctor-for-tinnitus-in-navi-mumbai.php">
     <meta property="og:title" content="Best Doctor For Tinnitus in Navi Mumbai | Dr Vaishali Sangole">
     <meta property="og:description" content="If You are Looking For Best Doctor For Tinnitus in Navi Mumbai.Contact us at - 91 - 9967752407">
     <meta property="og:url" content="https://entvaishalisangole.com/best-doctor-for-tinnitus-in-navimumbai.php">
@@ -579,6 +579,10 @@
 
         
 
+        name = name.trim(); mobile = mobile.replace(/[^0-9+]/g, "");
+        if (name.length < 2) { alert("Please enter the patient name."); return; }
+        if (!/^(\+91)?[6-9][0-9]{9}$/.test(mobile)) { alert("Please enter a valid 10-digit Indian mobile number."); return; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert("Please enter a valid email address or leave it blank."); return; }
         var whatsappurl="https://wa.me/+919967752407?text="
 
         +"*Enquiry from entvaishalisangole.com*,"+"%0a"
